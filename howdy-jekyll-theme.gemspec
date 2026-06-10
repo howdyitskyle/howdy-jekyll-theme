@@ -2,7 +2,7 @@ Gem::Specification.new do |spec|
   spec.name          = "howdy-jekyll-theme"
   spec.version       = "1.0.0"
   spec.authors       = ["Kyle Greenan"]
-  spec.email         = ["your.email@example.com"]
+  spec.email         = ["kyle@howdyitskyle.com"]
 
   spec.summary       = "A clean and modern Jekyll theme for personal websites and portfolios"
   spec.description   = "Howdy is a clean and modern Jekyll theme designed for personal websites and portfolios. Features both light and dark themes, responsive layout, elegant typography, and support for projects and blog."

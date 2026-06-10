@@ -11,7 +11,9 @@ A gem-based Jekyll theme (`howdy-jekyll-theme`, v1.0.0) for personal sites and p
 | Setup | `bundle config --local path .bundle && bundle install` |
 | Dev server | `bundle exec jekyll serve` → http://localhost:4000 |
 | Build gem | `gem build howdy-jekyll-theme.gemspec` |
-| Install local gem | `gem install ./howdy-jekyll-theme-1.0.0.gem` |
+| Push gem | `gem push howdy-jekyll-theme-1.0.0.gem` (requires API key) |
+| Playwright tests | `npm test` |
+| Install npm deps | `npm install` |
 
 ## Architecture
 
@@ -42,8 +44,19 @@ blog/         — Blog index page (pagination entry)
 lib/          — Gem entry point (Jekyll hook)
 ```
 
+## CI/CD
+
+- **Workflow**: `.github/workflows/ci.yml` — validate → test → lighthouse + playwright (parallel) → deploy
+- **Playwright** runs inside `mcr.microsoft.com/playwright:v1.59.1` Docker container — browsers pre-installed, no CDN download needed
+- **Ruby native gems** in the Playwright container need `apt-get install -y build-essential ruby-dev libyaml-0-2` before `ruby/setup-ruby`
+- **Deploy** builds with `JEKYLL_ENV=production bundle exec jekyll build --baseurl "/howdy-jekyll-theme"` (repo name is the base path)
+- **GitHub Pages** is enabled with "Deploy from workflow" (not the default Jekyll builder)
+- **GitHub secret** `GEM_HOST_API_KEY` is set for CI gem publishing
+
 ## Gotchas
 
 - The `_config.yml` excludes `Gemfile`, `Gemfile.lock`, `*.gemspec`, `README.md`, `LICENSE` from the Jekyll build — do not put content there expecting it to render.
 - Font files (Inter, Chaumont Script, Fragment Mono) in `assets/fonts/` are licensed; verify licensing before redistributing.
 - The `.bundle/` directory contains vendored gems — do not edit files inside it.
+- When deploying to a GitHub Pages project site, build with `--baseurl "/repository-name"` so asset paths resolve correctly.
+- The Playwright Docker container is based on Ubuntu 22.04 — Ruby native gems that need C compilation require `build-essential` and `ruby-dev`.
