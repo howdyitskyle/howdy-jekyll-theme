@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "howdy-jekyll-theme"
   spec.version       = "1.0.0"
-  spec.authors       = ["Kyle"]
+  spec.authors       = ["Kyle Greenan"]
   spec.email         = ["your.email@example.com"]
 
   spec.summary       = "A clean and modern Jekyll theme for personal websites and portfolios"
