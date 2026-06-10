@@ -29,7 +29,7 @@ task :test => :build do
       /disqus\.com/,
       /utteranc\.es/,
       /plausible\.io/,
-      /\.example\.com/,
+      /example\.com/,
       /dribbble\.com\/yourusername/,
       /github\.com\/.*howdy-jekyll-theme/,
       /calendly\.com\/yourusername/,
