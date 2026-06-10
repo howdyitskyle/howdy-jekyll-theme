@@ -25,8 +25,8 @@
 ## Screenshots
 
 | Light Mode | Dark Mode |
-|---|---|
-| ![Light mode](https://via.placeholder.com/600x340/f5f5f5/1e1e28?text=Howdy+%7C+Light+Mode) | ![Dark mode](https://via.placeholder.com/600x340/1a1a1a/cccccc?text=Howdy+%7C+Dark+Mode) |
+|---|---|---|
+| ![Light mode](assets/images/howdy-theme-light.png) | ![Dark mode](assets/images/howdy-theme-dark.png) |
 
 ## Features
 
