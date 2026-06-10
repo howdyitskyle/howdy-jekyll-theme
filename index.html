@@ -1,0 +1,63 @@
+---
+layout: home
+---
+
+<section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          {% include hero-carousel.html %}
+          <div class="logo-overlay">{% include logo.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      {% include navigation.html %}
+
+      <div class="content-area">
+        {% if site.hero.headline %}
+        <h1>{{ site.hero.headline }}</h1>
+        {% endif %}
+
+        {% if site.hero.subtitle %}
+        <p class="hero-subtitle" style="color: var(--howdy-text-muted); margin-top: 12px; max-width: 50ch;">
+          {{ site.hero.subtitle }}
+        </p>
+        {% endif %}
+
+        {% if site.hero.cta_text %}
+        <div class="button-group">
+          <a href="{{ site.hero.cta_url | default: '/projects' | relative_url }}" class="btn btn-secondary">{{ site.hero.cta_text }}</a>
+        </div>
+        {% endif %}
+
+        {% if site.company_logos.enabled != false and site.company_logos.items %}
+        <div class="company-logos">
+          <div class="logos-scroll">
+            {% assign logos = site.company_logos.items | concat: site.company_logos.items %}
+            {% for logo in logos %}
+              {% if logo.url %}
+                <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer" class="logo-link" aria-label="{{ logo.name }}">
+              {% endif %}
+              {% if logo.image %}
+                <img src="{{ logo.image | relative_url }}" alt="{{ logo.name }}" class="logo-img" style="width: {{ logo.width }}px;">
+              {% else %}
+                <svg viewBox="0 0 {{ logo.width }} 30" class="logo-svg"><text x="{{ logo.width | divided_by: 2 }}" y="20" text-anchor="middle" fill="currentColor" font-family="var(--howdy-font-primary)" font-size="14" font-weight="500" letter-spacing="0.05em">{{ logo.name }}</text></svg>
+              {% endif %}
+              {% if logo.url %}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        {% include social-links.html %}
+      </div>
+    </div>
+  </div>
+</section>

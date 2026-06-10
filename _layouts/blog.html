@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          {% include hero-carousel.html %}
+          <div class="logo-overlay">{% include logo.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      {% include navigation.html %}
+      <div class="content-area">
+        <h1>Blog</h1>
+        <p class="body-large" style="color: var(--howdy-text-secondary);">{{ page.description | default: "Thoughts, ideas, and inspiration." }}</p>
+
+        <div class="posts-grid" style="margin-top: 48px;">
+          {% for post in paginator.posts %}
+            <a href="{{ post.url | relative_url }}" class="post-card">
+              {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
+              {% endif %}
+              <div class="post-category category-{{ post.category | downcase }}">{{ post.category }}</div>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+              <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            </a>
+          {% endfor %}
+        </div>
+
+        {% include blog-pagination.html %}
+      </div>
+    </div>
+  </div>
+</section>

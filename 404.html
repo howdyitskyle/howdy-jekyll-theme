@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /404.html
+hero_image: /assets/illustrations/oops-something-went-wrong.svg
+---
+
+<section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          {% include hero-carousel.html %}
+          <div class="logo-overlay">{% include logo.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      {% include navigation.html %}
+
+      <div class="content-area">
+        <h1 class="error-code">404</h1>
+        <p class="error-title">{{ site.page_404.title | default: "Page Not Found" }}</p>
+        <p class="error-message">{{ site.page_404.message | default: "The page you're looking for doesn't exist or has been moved." }}</p>
+
+        <div style="margin-top: 32px;">
+          <a href="{{ site.page_404.button_url | default: '/' | relative_url }}" class="btn btn-secondary">
+            {{ site.page_404.button_text | default: "Go Home" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

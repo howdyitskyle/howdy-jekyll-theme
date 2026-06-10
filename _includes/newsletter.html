@@ -1,0 +1,10 @@
+{% if site.newsletter and site.newsletter.enabled %}
+<div class="newsletter">
+  <h3>{{ site.newsletter.title | default: "Stay in the loop" }}</h3>
+  <p>{{ site.newsletter.description | default: "Get occasional updates — no spam, ever." }}</p>
+  <form action="{{ site.newsletter.action_url }}" method="post" target="_blank" class="newsletter-form">
+    <input type="email" name="EMAIL" placeholder="{{ site.newsletter.placeholder | default: 'your@email.com' }}" required aria-label="Email address">
+    <button type="submit">{{ site.newsletter.button_text | default: "Subscribe" }}</button>
+  </form>
+</div>
+{% endif %}

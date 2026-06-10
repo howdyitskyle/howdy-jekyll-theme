@@ -1,0 +1,52 @@
+---
+layout: home
+title: "Projects"
+description: "Case studies in product design, AI experiences, design systems, and complex problem-solving."
+---
+
+<section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          {% include hero-carousel.html %}
+          <div class="logo-overlay">{% include logo.html %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      {% include navigation.html %}
+      <div class="content-area">
+        <h1>Projects</h1>
+        <p class="body-large" style="color: var(--howdy-text-secondary);">{{ page.description }}</p>
+
+        <div class="projects-grid" style="margin-top: 48px;">
+          {% assign sorted_projects = site.projects %}
+          {% for project in sorted_projects %}
+            <a href="{{ project.url | relative_url }}" class="project-card">
+              {% if project.image %}
+                <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="project-image">
+              {% else %}
+                <div class="project-image" style="background-color: var(--howdy-bg-light-gray); display: flex; align-items: center; justify-content: center;">
+                  <span style="color: var(--howdy-text-muted);">No image</span>
+                </div>
+              {% endif %}
+              {% if project.category %}
+                <div class="project-category">{{ project.category }}</div>
+              {% endif %}
+              <h3 class="project-title">{{ project.title }}</h3>
+              {% if project.subtitle %}
+                <p class="project-excerpt">{{ project.subtitle }}</p>
+              {% else %}
+                <p class="project-excerpt">{{ project.excerpt | strip_html | truncate: 120 }}</p>
+              {% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

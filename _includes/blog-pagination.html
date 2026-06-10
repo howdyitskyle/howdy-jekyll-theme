@@ -1,0 +1,31 @@
+{% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="btn btn-secondary">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+          <path d="M9 3L4 8L9 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ site.pagination.prev_text | default: "Prev" }}
+      </a>
+    {% endif %}
+
+    {% for page_num in (1..paginator.total_pages) %}
+      {% if page_num == paginator.page %}
+        <span class="pagination-page active">{{ page_num }}</span>
+      {% elsif page_num == 1 %}
+        <a href="{{ paginator.first_page_path }}" class="pagination-page">{{ page_num }}</a>
+      {% else %}
+        <a href="{{ paginator.first_page_path | append: 'page' | append: page_num | append: '/' }}" class="pagination-page">{{ page_num }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="btn btn-secondary post-nav-next">
+        {{ site.pagination.next_text | default: "Next" }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+          <path d="M7 3L12 8L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

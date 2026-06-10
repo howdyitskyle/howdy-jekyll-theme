@@ -1,0 +1,24 @@
+<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span class="nav-toggle-icon"></span>
+</button>
+
+<div class="nav-overlay"></div>
+
+<nav class="site-nav">
+  {% for item in site.navigation %}
+    {% assign item_url = item.url | relative_url %}
+    {% assign page_url = page.url | relative_url %}
+    {% assign is_active = false %}
+
+    {% if item.url == "/" %}
+      {% if page_url == "/" or page_url == "" %}
+        {% assign is_active = true %}
+      {% endif %}
+    {% elsif page_url contains item_url %}
+      {% assign is_active = true %}
+    {% endif %}
+
+    <a href="{{ item_url }}" {% if is_active %}class="active"{% endif %} {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
+  {% endfor %}
+  {% include dark-mode-toggle.html %}
+</nav>

@@ -1,0 +1,80 @@
+{% comment %}
+  Hero Carousel Include
+  Supports single `hero_image` (backward compatible) and array `hero_images`
+  or auto-gathering from collection featured images on index pages.
+  Fallback to placeholder if no images exist.
+{% endcomment %}
+
+{% assign images = "" | split: "" %}
+
+{% comment %}Priority: page.hero_images > collection images > page.hero_image > site.hero_images > site.hero_image{% endcomment %}
+{% if page.hero_images and page.hero_images != empty %}
+  {% for img in page.hero_images %}
+    {% assign images = images | push: img %}
+  {% endfor %}
+
+{% comment %}Projects index — gather from all projects{% endcomment %}
+{% elsif page.url == '/projects/' %}
+  {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+  {% for project in sorted_projects %}
+    {% if project.image %}
+      {% assign images = images | push: project.image %}
+    {% endif %}
+  {% endfor %}
+
+{% comment %}Blog index — use config or auto-gather{% endcomment %}
+{% elsif page.layout == 'blog' %}
+  {% if site.blog.hero_images %}
+    {% for img in site.blog.hero_images %}
+      {% assign images = images | push: img %}
+    {% endfor %}
+  {% else %}
+    {% assign limit = site.blog.hero_image_limit | default: site.posts.size %}
+    {% assign counter = 0 %}
+    {% for post in site.posts limit: limit %}
+      {% if post.image %}
+        {% assign images = images | push: post.image %}
+        {% assign counter = counter | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+{% comment %}Fallback to single image if no collection images found{% endcomment %}
+{% if images == empty %}
+  {% if page.hero_image and page.hero_image != "" %}
+    {% assign images = images | push: page.hero_image %}
+  {% elsif page.image and page.image != "" %}
+    {% assign images = images | push: page.image %}
+  {% elsif site.hero_images and site.hero_images != empty %}
+    {% for img in site.hero_images %}
+      {% assign images = images | push: img %}
+    {% endfor %}
+  {% elsif site.hero_image and site.hero_image != "" %}
+    {% assign images = images | push: site.hero_image %}
+  {% endif %}
+{% endif %}
+
+{% assign image_count = images | size %}
+
+{% if image_count == 0 %}
+  <div class="hero-placeholder"></div>
+{% elsif image_count == 1 %}
+  <img src="{{ images.first | relative_url }}" alt="Hero" class="hero-image">
+{% else %}
+  <div class="hero-carousel swiper" aria-label="Hero image carousel">
+    <div class="swiper-wrapper">
+      {% for img in images %}
+        <div class="swiper-slide">
+          <img
+            src="{{ img | relative_url }}"
+            alt="Hero slide {{ forloop.index }}"
+            class="hero-carousel__slide"
+            loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+          >
+        </div>
+      {% endfor %}
+    </div>
+    <div class="hero-carousel__dots"></div>
+  </div>
+{% endif %}

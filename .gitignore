@@ -1,0 +1,10 @@
+_site/
+.bundle/
+.jekyll-cache/
+lighthouse-reports/
+.lighthouseci/
+node_modules/
+test-results/
+*.gem
+*.map
+Gemfile.lock
