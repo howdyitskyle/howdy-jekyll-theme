@@ -90,10 +90,7 @@ jobs:
 
       - name: Install Playwright browser
         if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: npx playwright install --with-deps chromium
-        env:
-          DEBIAN_FRONTEND: noninteractive
-          TZ: Etc/UTC
+        run: npx playwright install chromium
 
       - name: Run Playwright tests
         run: npm test
