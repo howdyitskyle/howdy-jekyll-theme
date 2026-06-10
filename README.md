@@ -25,7 +25,7 @@
 ## Screenshots
 
 | Light Mode | Dark Mode |
-|---|---|---|
+|---|---|
 | ![Light mode](assets/images/howdy-theme-light.png) | ![Dark mode](assets/images/howdy-theme-dark.png) |
 
 ## Features
