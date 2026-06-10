@@ -33,6 +33,7 @@ task :test => :build do
       /dribbble\.com\/yourusername/,
       /github\.com\/.*howdy-jekyll-theme/,
       /calendly\.com\/yourusername/,
+      /^mailto:/,
     ],
     # Disable HTTPS check — local builds use http://localhost
     enforce_https: false,
