@@ -1,5 +1,3 @@
-require "jekyll"
-
 JEKYLL_DIR = File.expand_path(__dir__)
 DEST_DIR   = File.join(JEKYLL_DIR, "_site")
 
@@ -7,6 +5,7 @@ task :default => :test
 
 desc "Build the Jekyll site"
 task :build do
+  require "jekyll"
   Jekyll::Site.new(Jekyll.configuration(
     "source"      => JEKYLL_DIR,
     "destination" => DEST_DIR,
