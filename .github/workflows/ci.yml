@@ -63,6 +63,8 @@ jobs:
   playwright:
     needs: test
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -81,19 +83,6 @@ jobs:
 
       - name: Install npm deps
         run: npm ci
-
-      - name: Cache Playwright browsers
-        id: playwright-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            playwright-${{ runner.os }}-
-
-      - name: Install Playwright browser
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: npx playwright install chromium
 
       - name: Run Playwright tests
         run: npm test
