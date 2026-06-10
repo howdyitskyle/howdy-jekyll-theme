@@ -1,4 +1,3 @@
-require "html-proofer"
 require "jekyll"
 
 JEKYLL_DIR = File.expand_path(__dir__)
@@ -17,6 +16,7 @@ end
 
 desc "Build site and run HTML validation tests"
 task :test => :build do
+  require "html-proofer"
   options = {
     # Skip external link checks (fonts, social placeholders, demo URLs)
     ignore_urls: [
