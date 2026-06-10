@@ -1,12 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "howdy-jekyll-theme"
   spec.version       = "1.0.0"
-  spec.authors       = ["Your Name"]
+  spec.authors       = ["Kyle"]
   spec.email         = ["your.email@example.com"]
 
   spec.summary       = "A clean and modern Jekyll theme for personal websites and portfolios"
   spec.description   = "Howdy is a clean and modern Jekyll theme designed for personal websites and portfolios. Features both light and dark themes, responsive layout, elegant typography, and support for projects and blog."
-  spec.homepage      = "https://github.com/yourusername/howdy-jekyll-theme"
+  spec.homepage      = "https://howdyitskyle.github.io/howdy-jekyll-theme"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.0"
 

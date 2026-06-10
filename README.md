@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Lighthouse](https://img.shields.io/badge/lighthouse-all%20categories%20%E2%89%A50.9-008a1e)](lighthouserc.json)
 
-[**Live Demo**](#) · [**Installation**](#installation) · [**Configuration**](#configuration) · [**Contributing**](#contributing)
+[**Live Demo**](https://howdyitskyle.github.io/howdy-jekyll-theme/) · [**Installation**](#installation) · [**Configuration**](#configuration) · [**Contributing**](#contributing)
 
 ---
 
