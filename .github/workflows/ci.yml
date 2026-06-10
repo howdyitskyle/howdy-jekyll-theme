@@ -107,7 +107,7 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build --baseurl "/howdy-jekyll-theme"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
