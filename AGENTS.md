@@ -47,7 +47,7 @@ lib/          — Gem entry point (Jekyll hook)
 ## CI/CD
 
 - **Workflow**: `.github/workflows/ci.yml` — validate → test → lighthouse + playwright (parallel) → deploy
-- **Playwright** runs inside `mcr.microsoft.com/playwright:v1.59.1` Docker container — browsers pre-installed, no CDN download needed
+- **Playwright** runs inside `mcr.microsoft.com/playwright:v1.60.0` Docker container — browsers pre-installed, no CDN download needed
 - **Ruby native gems** in the Playwright container need `apt-get install -y build-essential ruby-dev libyaml-0-2` before `ruby/setup-ruby`
 - **Deploy** builds with `JEKYLL_ENV=production bundle exec jekyll build --baseurl "/howdy-jekyll-theme"` (repo name is the base path)
 - **GitHub Pages** is enabled with "Deploy from workflow" (not the default Jekyll builder)
