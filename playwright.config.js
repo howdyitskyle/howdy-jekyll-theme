@@ -10,7 +10,6 @@ export default defineConfig({
     baseURL: 'http://localhost:4000',
     trace: 'on-first-retry',
     actionTimeout: 5000,
-    headless: !process.env.CI,
   },
   webServer: {
     command: 'bundle exec jekyll serve --port 4000 --no-watch',

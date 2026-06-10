@@ -63,9 +63,14 @@ jobs:
   playwright:
     needs: test
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.59.1
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install system deps for Ruby
+        run: apt-get update -qq && apt-get install -y -qq libyaml-0-2 build-essential ruby-dev
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -79,11 +84,11 @@ jobs:
           node-version: lts/*
           cache: 'npm'
 
-      - name: Install npm deps (includes Chromium)
+      - name: Install npm deps
         run: npm ci
 
       - name: Run Playwright tests
-        run: xvfb-run npm test
+        run: npm test
 
   deploy:
     needs: [lighthouse, playwright]
