@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "jekyll", ">= 3.9"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8.0"
+  spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.8", "< 2.10"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.17"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-paginate-v2", "~> 3.0"
