@@ -67,7 +67,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.59.1
+      image: mcr.microsoft.com/playwright:v1.60.0
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
