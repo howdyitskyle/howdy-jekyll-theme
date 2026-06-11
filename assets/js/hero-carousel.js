@@ -26,11 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         prevSlideMessage: 'Previous slide',
         nextSlideMessage: 'Next slide',
       },
-      on: {
-        slideChange: () => {
-          document.body.classList.add('loaded');
-        },
-      },
     });
   });
 });
