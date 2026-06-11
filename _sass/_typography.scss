@@ -3,7 +3,7 @@
 @use "variables" as *;
 
 // Heading 1 — fluid responsive sizing
-h1, .h1 {
+h1 {
   font-family: var(--howdy-font-primary);
   font-weight: 600;
   line-height: 1.2;
@@ -196,40 +196,9 @@ p, .body-regular {
   letter-spacing: 0.01em;  // Required for small text (11-13px range)
 }
 
-// Button/Label text
-.label-text {
-  font-family: var(--howdy-font-primary);
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;  // Required for UI labels/buttons
-  transition: var(--howdy-transition);
-}
-
-// Centered text
-.text-center {
-  text-align: center;
-}
-
 // Muted text (gray)
 .text-muted {
   color: var(--howdy-text-muted);
-}
-
-// Script font for logo
-.script-text {
-  font-family: 'Chaumont Script', 'Style Script', cursive;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: 0.02em;
-
-  @media (max-width: $howdy-md) {
-    font-size: 28px;
-  }
-
-  @media (max-width: $howdy-sm) {
-    font-size: 24px;
-  }
 }
 
 // Code

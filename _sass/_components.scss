@@ -19,16 +19,6 @@
   border: 2px solid transparent;
   min-height: 44px;
 
-  &.btn-primary {
-    background-color: var(--howdy-text-primary);
-    color: var(--howdy-bg-white);
-
-    &:hover {
-      background-color: var(--howdy-accent-green);
-      color: var(--howdy-bg-white);
-    }
-  }
-
   &.btn-secondary {
     background-color: transparent;
     color: var(--howdy-text-primary);

@@ -53,10 +53,5 @@
   window.howdyNavIsClosing = function() {
     return navClosing;
   };
-
-  window.howdyNavIsOpen = function() {
-    return root.classList.contains('nav-open');
-  };
-
   updateNav();
 })();
