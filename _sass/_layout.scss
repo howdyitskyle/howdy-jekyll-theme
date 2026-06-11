@@ -437,7 +437,7 @@ body.loaded .projects-grid {
   flex: none;
   place-content: flex-start;
   align-items: stretch;
-  gap: var(--howdy-content-gap-xxl);
+  row-gap: 32px;
   width: 100%;
   max-width: 720px;
   height: min-content;
@@ -448,28 +448,23 @@ body.loaded .projects-grid {
 
   @media (max-width: $howdy-xl) {
     max-width: none;
-    gap: var(--howdy-content-gap-xl);
     padding: 56px var(--howdy-content-area-padding-xl) var(--howdy-content-area-padding-xl-bottom);
   }
 
   @media (max-width: $howdy-lg) {
-    gap: var(--howdy-content-gap-lg);
     padding: 0 var(--howdy-content-area-padding-lg) var(--howdy-content-area-padding-lg-bottom);
   }
 
   @media (max-width: $howdy-md) {
     padding: 0 var(--howdy-content-area-padding-md) var(--howdy-content-area-padding-md-bottom);
-    gap: var(--howdy-content-gap-md);
   }
 
   @media (max-width: $howdy-sm) {
     padding: 0 var(--howdy-content-area-padding-sm) var(--howdy-content-area-padding-sm-bottom);
-    gap: var(--howdy-content-gap-sm);
   }
 
   @media (max-width: $howdy-xs) {
     padding: 0 var(--howdy-content-area-padding-xs) var(--howdy-content-area-padding-xs-bottom);
-    gap: var(--howdy-content-gap-xs);
   }
 }
 
