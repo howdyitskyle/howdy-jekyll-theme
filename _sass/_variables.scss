@@ -12,7 +12,7 @@ $howdy-xs: 360px;    // Small phones
   // Primary colors (Light mode)
   --howdy-text-primary: #1e1e28;
   --howdy-bg-light-gray: #f0f0f0;
-  --howdy-accent-green: #008a1e;
+  --howdy-accent: #008a1e;
   --howdy-bg-green-tint: #f5fbf7;
   --howdy-bg-white: #fff;
   --howdy-border: #e3e3e3;
@@ -142,7 +142,7 @@ $howdy-xs: 360px;    // Small phones
   :root:not(.light-mode) {
     --howdy-text-primary: #fafafa;
     --howdy-bg-light-gray: #1e1e1e;
-    --howdy-accent-green: #7eea9b;
+    --howdy-accent: #7eea9b;
     --howdy-bg-green-tint: #1c2b22;
     --howdy-bg-white: #141414;
     --howdy-border: #2d2d2d;

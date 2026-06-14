@@ -579,7 +579,7 @@ body.loaded .projects-grid {
   }
 
   &:hover .logo-text {
-    fill: var(--howdy-accent-green);
+    fill: var(--howdy-accent);
   }
 
   @media (max-width: $howdy-lg) {
@@ -667,11 +667,11 @@ body.loaded .projects-grid {
     }
 
     &.active {
-      color: var(--howdy-accent-green);
+      color: var(--howdy-accent);
       background-color: var(--howdy-bg-green-tint);
 
       &:hover {
-        color: var(--howdy-accent-green);
+        color: var(--howdy-accent);
         background-color: var(--howdy-bg-green-tint);
       }
     }
@@ -699,8 +699,8 @@ html.nav-open .site-nav {
   color: var(--howdy-text-primary);
 
   &:hover {
-    border-color: var(--howdy-accent-green);
-    color: var(--howdy-accent-green);
+    border-color: var(--howdy-accent);
+    color: var(--howdy-accent);
   }
 
   @media (max-width: $howdy-xxl) {
@@ -916,7 +916,7 @@ html.nav-open .nav-overlay {
   font-family: var(--howdy-font-mono);
   font-size: 120px;
   font-weight: 400;
-  color: var(--howdy-accent-green);
+  color: var(--howdy-accent);
   line-height: 1;
   margin-bottom: 8px;
 }

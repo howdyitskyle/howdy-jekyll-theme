@@ -22,26 +22,27 @@
 # Sections:
 #   [1]  Site identity       — Title, author, contact info
 #   [2]  URL & base path     — Domain and subpath configuration
-#   [3]  Brand               — Logo text and color palette
-#   [4]  Favicon & OG images — Icons and social share thumbnails
-#   [5]  Fonts               — Primary, mono, and script font selection
-#   [6]  Navigation          — Top bar menu links
-#   [7]  Jekyll internals    — Collections, pagination, plugins, defaults
-#   [8]  Hero images         — Site-wide image fallback chain
-#   [9]  Social links        — Profile icons
-#  [10]  Analytics           — Google Analytics or Plausible
-#  [11]  Reading time        — Estimate shown on posts
-#  [12]  Share buttons       — Twitter, LinkedIn, Facebook, Reddit, HN, WhatsApp, Telegram, Email
-#  [13]  Comments            — Giscus, Disqus, or Utterances
-#  [14]  Newsletter          — Mailchimp, Buttondown, or custom form
-#  [15]  Table of contents   — Auto-generated post sidebar
-#  [16]  Custom CSS / JS     — Inject additional assets
-#  [17]  Theme mode          — Default light/dark/auto
-#  [18]  Homepage            — Hero, company logos
-#  [19]  About page          — Bio, headline, resume
-#  [20]  Contact page        — Methods, form, FAQ
-#  [21]  Testimonials        — Social proof quotes
-#  [22]  404 page            — Error page copy
+#   [3]  Colors              — CSS variable overrides
+#   [4]  Brand               — Logo text
+#   [5]  Favicon & OG images — Icons and social share thumbnails
+#   [6]  Fonts               — Primary, mono, and script font selection
+#   [7]  Navigation          — Top bar menu links
+#   [8]  Jekyll internals    — Collections, pagination, plugins, defaults
+#   [9]  Hero images         — Site-wide image fallback chain
+#  [10]  Social links        — Profile icons
+#  [11]  Analytics           — Google Analytics or Plausible
+#  [12]  Reading time        — Estimate shown on posts
+#  [13]  Share buttons       — Twitter, LinkedIn, Facebook, Reddit, HN, WhatsApp, Telegram, Email
+#  [14]  Comments            — Giscus, Disqus, or Utterances
+#  [15]  Newsletter          — Mailchimp, Buttondown, or custom form
+#  [16]  Table of contents   — Auto-generated post sidebar
+#  [17]  Custom CSS / JS     — Inject additional assets
+#  [18]  Theme mode          — Default light/dark/auto
+#  [19]  Homepage            — Hero, company logos
+#  [20]  About page          — Bio, headline, resume
+#  [21]  Contact page        — Methods, form, FAQ
+#  [22]  Testimonials        — Social proof quotes
+#  [23]  404 page            — Error page copy
 # ────────────────────────────────────────────────────────────────
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -67,21 +68,25 @@ url: "https://example.com"
 baseurl: ""
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [3] Brand
+# [3] Colors
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# logo_text — Text-based logo rendered in the nav and hero overlay.
-#             Uses Chaumont Script font. Set to "" to hide.
-# colors — Optional CSS variable overrides. See _sass/_variables.scss
-#          for the full list of overridable tokens.
-#          Example:
-#            colors:
-#              accent_green: "#e63946"
-#              text_primary: "#111827"
-logo_text: "Howdy"
+# Optional CSS variable overrides. See _sass/_variables.scss
+# for the full list of overridable tokens.
+# Example:
+#   colors:
+#     accent: "#e63946"
+#     text_primary: "#111827"
 colors: {}
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [4] Favicon & social share images
+# [4] Brand
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# logo_text — Text-based logo rendered in the nav and hero overlay.
+#             Uses Chaumont Script font. Set to "" to hide.
+logo_text: "Howdy"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# [5] Favicon & social share images
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # favicon — Light mode browser tab icon (PNG or SVG).
 # favicon_dark — Dark mode browser tab icon.
@@ -95,7 +100,7 @@ og_image: "/assets/images/og-image.png"
 theme_color: "#008a1e"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [5] Fonts
+# [6] Fonts
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Fonts are loaded dynamically from Google Fonts based on these values.
 #
@@ -115,7 +120,7 @@ fonts:
   mono: "Fragment Mono"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [6] Navigation
+# [7] Navigation
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Array of links rendered in the top bar.
 # title — Display text.
@@ -133,7 +138,7 @@ navigation:
     url: "/contact"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [7] Jekyll internals
+# [8] Jekyll internals
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 # theme — Uncomment when consuming this theme as a gem (not for local dev).
@@ -223,7 +228,7 @@ exclude:
 timezone: America/New_York
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [8] Hero images — site-wide fallback
+# [9] Hero images — site-wide fallback
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Hero images follow a priority chain. Set them at the most specific level:
 #
@@ -246,7 +251,7 @@ hero_image: /assets/illustrations/video-call.svg
 #   - /assets/illustrations/designer.svg
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [9] Social links
+# [10] Social links
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Displayed as SVG icons in the homepage footer.
 # Remove a key to hide that icon. Add custom platforms by editing
@@ -259,7 +264,7 @@ social:
   dribbble: "https://dribbble.com/yourusername"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [10] Analytics
+# [11] Analytics
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Uncomment ONE block below to enable tracking.
 
@@ -274,13 +279,13 @@ social:
 #     script_url: "https://plausible.io/js/script.js"  # optional, self-hosted
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [11] Reading time
+# [12] Reading time
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Displays a "X min read" estimate on post pages (based on 200 wpm).
 reading_time: true
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [12] Share buttons
+# [13] Share buttons
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # enabled — Toggle the share bar on post pages.
 # platforms — Array of enabled buttons. Supported:
@@ -299,7 +304,7 @@ share_buttons:
     - email
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [13] Comments
+# [14] Comments
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Supported providers: giscus, disqus, utterances.
 # Uncomment ONE block and fill in your credentials.
@@ -335,7 +340,7 @@ share_buttons:
 #     label: "comments"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [14] Newsletter signup
+# [15] Newsletter signup
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Renders a subscribe form at the bottom of post pages.
 # Supported providers: mailchimp, buttondown, custom.
@@ -354,7 +359,7 @@ share_buttons:
 #   button_text: "Subscribe"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [15] Table of contents
+# [16] Table of contents
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Auto-generates a "On this page" nav from post headings.
 # enabled — Toggle TOC on all posts.
@@ -366,7 +371,7 @@ table_of_contents:
   max_heading: 3
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [16] Custom CSS / JS injection
+# [17] Custom CSS / JS injection
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Paths to additional stylesheets or scripts injected before </head>
 # or </body>. Relative to site root.
@@ -374,7 +379,7 @@ table_of_contents:
 # custom_js: "/assets/js/custom.js"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [17] Theme mode
+# [18] Theme mode
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Sets the initial color scheme before the user toggles.
 # "auto" — Follows the user's OS preference (default).
@@ -384,7 +389,7 @@ table_of_contents:
 default_theme: "auto"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [18] Homepage
+# [19] Homepage
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 # Hero headline — 3 lines shown on the homepage.
@@ -423,7 +428,7 @@ company_logos:
       url: "https://lumin.example.com"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [19] About page
+# [20] About page
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # about_title — <title> tag text for the about page.
 # about_headline — Hero heading text on the about page (supports HTML).
@@ -446,7 +451,7 @@ about_resume:
   url: "/assets/resume.pdf"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [20] Contact page
+# [21] Contact page
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # contact.intro — Shown above contact methods.
 # contact.methods — Array of contact methods (email, location, schedule, availability).
@@ -487,7 +492,7 @@ contact:
         answer: "Always open to interesting opportunities. Let's chat and see where things go."
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [21] Testimonials
+# [22] Testimonials
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Shown on the about page. Each item has quote, name, and role.
 testimonials:
@@ -502,7 +507,7 @@ testimonials:
     role: "Product Designer, Cirrus"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# [22] 404 page
+# [23] 404 page
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Shown when a visitor lands on a non-existent URL.
 # Customize the message, button text, and link.

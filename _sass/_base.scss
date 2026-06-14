@@ -52,7 +52,7 @@ img {
 
 // Focus-visible — global accessible focus ring
 :focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
@@ -60,57 +60,57 @@ img {
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 0;
-  border-color: var(--howdy-accent-green);
+  border-color: var(--howdy-accent);
 }
 
 // Theme toggle focus ring
 .theme-toggle:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // Nav links focus ring
 .site-nav a:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // Social links focus ring — ensure ring is visible outside the container
 .social-links a:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // Share buttons focus ring
 .share-btn:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // Pagination focus ring
 .pagination-page:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // TOC links focus ring
 .toc a:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 // Nav toggle (hamburger) focus ring
 .nav-toggle:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
 }
 
 // FAQ details/summary focus ring
 .faq-question:focus-visible {
-  outline: 2px solid var(--howdy-accent-green);
+  outline: 2px solid var(--howdy-accent);
   outline-offset: 2px;
   border-radius: 2px;
 }
