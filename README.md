@@ -46,7 +46,7 @@
 | **Newsletter** | Mailchimp, Buttondown, or custom form support |
 | **Comments** | Giscus, Disqus, or Utterances |
 | **Analytics** | Google Analytics or Plausible |
-| **Company Logos** | Configurable "Trusted by" marquee section |
+| **Company Logos** | Configurable marquee section |
 | **Fonts** | Local DM Sans variable font + Chaumont Script logo font. Configurable via `fonts.primary` and `fonts.mono` |
 
 ## Browser Compatibility
@@ -351,11 +351,11 @@ Copy any `_includes/` or `_layouts/` file into your site's directory with the sa
 
 ### User Color Palette
 
-Override the green accent in your `_config.yml`:
+Override the accent color in your `_config.yml`:
 
 ```yaml
 colors:
-  accent_green: "#008a1e"
+  accent: "#e63946"
 ```
 
 ## Development

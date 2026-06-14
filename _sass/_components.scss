@@ -25,8 +25,8 @@
     border-color: var(--howdy-border);
 
     &:hover {
-      border-color: var(--howdy-accent-green);
-      color: var(--howdy-accent-green);
+      border-color: var(--howdy-accent);
+      color: var(--howdy-accent);
     }
   }
 
@@ -90,7 +90,7 @@
   }
 
   &:hover {
-    border-color: var(--howdy-accent-green);
+    border-color: var(--howdy-accent);
   }
 
   &:hover .project-image {
@@ -117,7 +117,7 @@
   align-items: center;
   padding: 4px 12px;
   background-color: var(--howdy-bg-green-tint);
-  color: var(--howdy-accent-green);
+  color: var(--howdy-accent);
   border-radius: var(--howdy-radius-full);
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -141,7 +141,7 @@
 
   &:hover {
     transform: translateY(-2px);
-    border-color: var(--howdy-accent-green);
+    border-color: var(--howdy-accent);
     background-color: var(--howdy-bg-light-gray);
   }
 
@@ -209,7 +209,7 @@
 
   &.category-freebies {
     background-color: var(--howdy-bg-green-tint);
-    color: var(--howdy-accent-green);
+    color: var(--howdy-accent);
   }
 
   &.category-interviews {
@@ -264,8 +264,8 @@
   transition: var(--howdy-transition);
 
   &:hover {
-    border-color: var(--howdy-accent-green);
-    color: var(--howdy-accent-green);
+    border-color: var(--howdy-accent);
+    color: var(--howdy-accent);
   }
 
   &.active {
@@ -336,9 +336,9 @@
       }
 
       &:focus-visible {
-        outline: 2px solid var(--howdy-accent-green);
+        outline: 2px solid var(--howdy-accent);
         outline-offset: 0;
-        border-color: var(--howdy-accent-green);
+        border-color: var(--howdy-accent);
       }
     }
 
@@ -454,7 +454,7 @@
         text-decoration: none;
 
         &:hover {
-          color: var(--howdy-accent-green);
+          color: var(--howdy-accent);
         }
       }
 
@@ -487,8 +487,8 @@
   color: var(--howdy-text-primary);
 
   &:hover {
-    border-color: var(--howdy-accent-green);
-    color: var(--howdy-accent-green);
+    border-color: var(--howdy-accent);
+    color: var(--howdy-accent);
   }
 
   svg {
@@ -514,7 +514,7 @@
     transition: var(--howdy-transition);
 
     &:hover {
-      color: var(--howdy-accent-green);
+      color: var(--howdy-accent);
     }
 
     svg {
@@ -552,7 +552,7 @@
     transition: var(--howdy-transition);
 
     &:hover {
-      color: var(--howdy-accent-green);
+      color: var(--howdy-accent);
     }
 
     &[style*="padding-left: 16px"],
@@ -619,8 +619,8 @@
     }
 
     &:hover {
-      border-color: var(--howdy-accent-green);
-      color: var(--howdy-accent-green);
+      border-color: var(--howdy-accent);
+      color: var(--howdy-accent);
     }
   }
 }
@@ -662,9 +662,9 @@
       min-height: 44px;
 
       &:focus-visible {
-        outline: 2px solid var(--howdy-accent-green);
+        outline: 2px solid var(--howdy-accent);
         outline-offset: 0;
-        border-color: var(--howdy-accent-green);
+        border-color: var(--howdy-accent);
       }
     }
 
@@ -672,7 +672,7 @@
       padding: 10px 20px;
       border: none;
       border-radius: var(--howdy-radius-full);
-      background-color: var(--howdy-accent-green);
+      background-color: var(--howdy-accent);
       color: var(--howdy-bg-white);
       font-family: var(--howdy-font-primary);
       font-weight: 600;
