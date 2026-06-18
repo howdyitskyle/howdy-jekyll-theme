@@ -426,7 +426,7 @@ This theme is available under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - **[axeltmpl](https://axeltmpl.framer.website/)** — Design inspired by and remixed from this Framer template
-- **[Illustration Kit](https://illustrationkit.com/illustrations/ven)** — Free SVG illustrations by Pencil
+- **[Ven from Illustration Kit](https://illustrationkit.com/illustrations/ven)** — Free SVG illustrations
 - **[Swiper.js](https://swiperjs.com/)** — Touch-enabled carousel (MIT)
 - **[Chaumont Script](https://fontmeme.com/fonts/chaumont-script-font/)** — by Måns Grebäck
 - **[Jekyll](https://jekyllrb.com/)** — Static site generator
