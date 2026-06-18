@@ -96,9 +96,6 @@ jobs:
   deploy:
     needs: [lighthouse, playwright]
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url || '' }}
     steps:
       - uses: actions/checkout@v6
 
@@ -120,5 +117,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        id: deployment
         uses: actions/deploy-pages@v5
+        id: deployment
