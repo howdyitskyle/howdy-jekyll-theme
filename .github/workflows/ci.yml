@@ -67,7 +67,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.60.0
+      image: mcr.microsoft.com/playwright:v1.61.0
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
@@ -95,11 +95,10 @@ jobs:
 
   deploy:
     needs: [lighthouse, playwright]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || '' }}
     steps:
       - uses: actions/checkout@v6
 
@@ -110,13 +109,16 @@ jobs:
           bundler-cache: true
 
       - name: Build site
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: JEKYLL_ENV=production bundle exec jekyll build --baseurl "/howdy-jekyll-theme"
 
       - name: Upload artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v5
