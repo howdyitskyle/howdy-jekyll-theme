@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Professional design methodology — intentional, justified decisions that hold up to user testing.">
+
+<!-- Theme color -->
+
+<meta name="theme-color" content="#008a1e">
+
+
+<!-- Favicons -->
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+
+
+<link rel="apple-touch-icon" href="/howdy-jekyll-theme/assets/images/apple-touch-icon.png">
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:description" content="Professional design methodology — intentional, justified decisions that hold up to user testing.">
+
+
+<meta property="og:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Professional design methodology — intentional, justified decisions that hold up to user testing.">
+
+<meta name="twitter:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg">
+
+
+<!-- RSS Feed -->
+<link type="application/atom+xml" rel="alternate" href="https://example.com/howdy-jekyll-theme/feed.xml" title="Howdy" />
+
+<!-- SEO Tag -->
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Product Design Best Practices | Howdy</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Product Design Best Practices" />
+<meta name="author" content="Your Name" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Professional design methodology — intentional, justified decisions that hold up to user testing." />
+<meta name="twitter:description" property="og:description" content="Professional design methodology — intentional, justified decisions that hold up to user testing." />
+<link rel="canonical" href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html" />
+<meta property="og:url" content="https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html" />
+<meta property="og:site_name" content="Howdy" />
+<meta property="og:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-04-22T00:00:00-04:00" />
+<meta property="article:modified_time" content="2026-04-22T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" />
+<meta name="twitter:title" content="Product Design Best Practices" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Your Name"},"dateModified":"2026-04-22T00:00:00-04:00","datePublished":"2026-04-22T00:00:00-04:00","description":"Professional design methodology — intentional, justified decisions that hold up to user testing.","headline":"Product Design Best Practices","image":"https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html"},"url":"https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+<!-- Local fonts -->
+<style>
+  @font-face {
+    font-family: 'Chaumont Script';
+    src: url('/howdy-jekyll-theme/assets/fonts/ChaumontScript-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Italic-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+</style>
+
+<!-- Custom CSS injection -->
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/swiper-bundle.min.css">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/main.css">
+
+<!-- Dark mode script (inline for immediate execution) -->
+<script>
+  (function() {
+    const root = document.documentElement;
+    const saved = localStorage.getItem('howdy-theme');
+    
+    if (saved === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (saved === 'light') {
+      root.classList.add('light-mode');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      root.classList.add('dark-mode');
+    }
+    
+  })();
+</script>
+
+<!-- Theme toggle icon state — set before first paint to prevent flash -->
+<style>
+  .sun-icon { display: none; }
+  .moon-icon { display: block; }
+  html.dark-mode .sun-icon { display: block; }
+  html.dark-mode .moon-icon { display: none; }
+</style>
+
+<!-- Page reveal — content starts hidden, revealed after first paint -->
+<style>
+  .hero-content,
+  .content-area > *,
+  .company-logos,
+  .hero-carousel,
+  .logo-overlay {
+    opacity: 0;
+  }
+</style>
+<script>
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      document.body.classList.add('loaded');
+    });
+  });
+</script>
+
+</head>
+<body>
+  <div class="main-container">
+    <section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+  <img src="/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" alt="Hero" class="hero-image">
+
+
+          <div class="logo-overlay"><a href="/howdy-jekyll-theme/" class="site-logo" aria-label="Howdy">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="160" height="80" class="site-logo-svg" role="img" aria-hidden="true">
+    <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle" class="logo-text">Howdy</text>
+  </svg>
+</a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span class="nav-toggle-icon"></span>
+</button>
+
+<div class="nav-overlay"></div>
+
+<nav class="site-nav">
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/"  >Home</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/about"  >About</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/projects"  >Projects</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/blog"  >Blog</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/contact"  >Contact</a>
+  
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun icon (shown in dark mode) -->
+  <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/>
+    <line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/>
+    <line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+  <!-- Moon icon (shown in light mode) -->
+  <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+</button>
+
+</nav>
+
+      <div class="content-area">
+        
+          <div class="detail-meta">
+            
+              <span class="post-category category-tutorials">Tutorials</span>
+            
+            
+              <span class="detail-date">Apr 22, 2026</span>
+            
+            
+              
+              
+              <span class="detail-read-time">4 min read</span>
+            
+          </div>
+        
+
+        <h1>Product Design Best Practices</h1>
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+<nav class="toc" aria-label="Table of contents">
+  <span class="toc-title">On this page</span>
+  
+    <a href="#before-you-design-discovery" style="padding-left:0px;">Before You Design: Discovery</a>
+  
+    <a href="#research--analysis" style="padding-left:0px;">Research &amp; Analysis</a>
+  
+    <a href="#research--copying-the-average" style="padding-left:16px;">Research ≠ Copying the Average</a>
+  
+    <a href="#three-lenses" style="padding-left:16px;">Three Lenses</a>
+  
+    <a href="#build-a-steal-list" style="padding-left:16px;">Build a Steal List</a>
+  
+    <a href="#typography" style="padding-left:0px;">Typography</a>
+  
+    <a href="#scale" style="padding-left:16px;">Scale</a>
+  
+    <a href="#leading" style="padding-left:16px;">Leading</a>
+  
+    <a href="#letter-spacing" style="padding-left:16px;">Letter-Spacing</a>
+  
+    <a href="#rules" style="padding-left:16px;">Rules</a>
+  
+    <a href="#color" style="padding-left:0px;">Color</a>
+  
+    <a href="#palette-structure" style="padding-left:16px;">Palette Structure</a>
+  
+    <a href="#working-with-your-primary" style="padding-left:16px;">Working with Your Primary</a>
+  
+    <a href="#contrast" style="padding-left:16px;">Contrast</a>
+  
+    <a href="#dark-theme" style="padding-left:16px;">Dark Theme</a>
+  
+    <a href="#tokens" style="padding-left:16px;">Tokens</a>
+  
+    <a href="#spacing" style="padding-left:0px;">Spacing</a>
+  
+    <a href="#the-scale" style="padding-left:16px;">The Scale</a>
+  
+    <a href="#proximity--relationship" style="padding-left:16px;">Proximity = Relationship</a>
+  
+    <a href="#density" style="padding-left:16px;">Density</a>
+  
+    <a href="#responsive" style="padding-left:16px;">Responsive</a>
+  
+    <a href="#motion" style="padding-left:0px;">Motion</a>
+  
+    <a href="#easing" style="padding-left:16px;">Easing</a>
+  
+    <a href="#rules-1" style="padding-left:16px;">Rules</a>
+  
+    <a href="#icons" style="padding-left:0px;">Icons</a>
+  
+    <a href="#the-persuasion-layer" style="padding-left:0px;">The Persuasion Layer</a>
+  
+    <a href="#the-soul" style="padding-left:0px;">The Soul</a>
+  
+    <a href="#implementation-quality-gate" style="padding-left:0px;">Implementation Quality Gate</a>
+  
+</nav>
+
+
+        
+
+        <div class="detail-content">
+          <p>Don’t guess. Make intentional, justified decisions.</p>
+
+<blockquote>
+  <p>If you showed this to 10 users tomorrow, what would they remember?</p>
+</blockquote>
+
+<h2 id="before-you-design-discovery">Before You Design: Discovery</h2>
+
+<p>Never design blind. Answer these first:</p>
+
+<p><strong>What</strong> are we building: Screen type, platform, scope</p>
+
+<p><strong>Who</strong> is this for: Audience, technical level</p>
+
+<p><strong>What</strong> should users do: Primary action, success metric</p>
+
+<p><strong>What</strong> feeling to evoke: Tone, energy</p>
+
+<p><strong>What job</strong> does this do: Help me decide, convince me, get me started</p>
+
+<p><strong>What</strong> objections exist: Is it worth it? Is it legit? Will it work?</p>
+
+<p><strong>What</strong> should they remember: The hook, the differentiator</p>
+
+<p><strong>Any</strong> constraints: Brand, tech requirements, inspirations</p>
+
+<p>Write a design brief before you open Figma:</p>
+
+<blockquote>
+  <p>I’m designing a <strong>[WHAT]</strong> for <strong>[WHO]</strong> that helps them <strong>[GOAL]</strong> and should feel <strong>[TONE]</strong>.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="research--analysis">Research &amp; Analysis</h2>
+
+<h3 id="research--copying-the-average">Research ≠ Copying the Average</h3>
+
+<p>Research is about understanding <em>why</em> choices work, not copying <em>what</em> everyone does.</p>
+
+<ul>
+  <li>Best practices are a starting point, not a destination</li>
+  <li>Safe often means forgettable</li>
+  <li>Document your reasoning: “Most use X, but we chose Y because…”</li>
+</ul>
+
+<h3 id="three-lenses">Three Lenses</h3>
+
+<p><strong>Structure:</strong> Layout, components, information hierarchy. Common solutions to common problems.</p>
+
+<p><strong>Visual Craft:</strong> For each strong reference, notice typography, color, spacing, details, icons, and overall vibe.</p>
+
+<p><strong>Conversion &amp; Soul:</strong> What’s the hook in the first 3 seconds? How do they handle objections? Where’s the trust? What’s unique? What microcopy has personality? What would a user remember tomorrow?</p>
+
+<h3 id="build-a-steal-list">Build a Steal List</h3>
+
+<p>When you research, document specific tactics with exact details:</p>
+
+<ul>
+  <li>“Linear: 13px/20px body, -0.01em tracking, 48px section gaps, accent at 8% opacity for hover”</li>
+  <li>Not “Linear: clean design”</li>
+</ul>
+
+<hr />
+
+<h2 id="typography">Typography</h2>
+
+<h3 id="scale">Scale</h3>
+
+<p>Use a consistent ratio: 1.2 (minor third) works well. Limit yourself to 6–8 sizes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Size</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Display (48–64px)</td>
+      <td>Hero sections</td>
+    </tr>
+    <tr>
+      <td>H1 (36–48px)</td>
+      <td>Page titles</td>
+    </tr>
+    <tr>
+      <td>H2 (24–32px)</td>
+      <td>Section headers</td>
+    </tr>
+    <tr>
+      <td>Body (16–18px)</td>
+      <td>Main content</td>
+    </tr>
+    <tr>
+      <td>Small (13–14px)</td>
+      <td>Captions, metadata</td>
+    </tr>
+    <tr>
+      <td>Caption (11–12px)</td>
+      <td>Fine print</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="leading">Leading</h3>
+
+<p>Large text = tight (1.0–1.2). Body = loose (1.5–1.6).</p>
+
+<h3 id="letter-spacing">Letter-Spacing</h3>
+
+<p>This is the detail most designers skip. Don’t:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text Type</th>
+      <th>Letter-Spacing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body (14–18px)</td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>Small text (11–13px)</td>
+      <td><code class="language-plaintext highlighter-rouge">0.01–0.02em</code></td>
+    </tr>
+    <tr>
+      <td>UI labels/buttons</td>
+      <td><code class="language-plaintext highlighter-rouge">0.02em</code></td>
+    </tr>
+    <tr>
+      <td>ALL CAPS</td>
+      <td><code class="language-plaintext highlighter-rouge">0.06–0.1em</code></td>
+    </tr>
+    <tr>
+      <td>Large headings (32px+)</td>
+      <td><code class="language-plaintext highlighter-rouge">-0.01</code> to <code class="language-plaintext highlighter-rouge">-0.02em</code></td>
+    </tr>
+    <tr>
+      <td>Display (48px+)</td>
+      <td><code class="language-plaintext highlighter-rouge">-0.02</code> to <code class="language-plaintext highlighter-rouge">-0.03em</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rules">Rules</h3>
+
+<ul>
+  <li>Line length: 50–75 characters</li>
+  <li>Max 2 typefaces</li>
+  <li>Use weights within a family before adding another font</li>
+</ul>
+
+<hr />
+
+<h2 id="color">Color</h2>
+
+<h3 id="palette-structure">Palette Structure</h3>
+
+<p><strong>Neutrals:</strong> 70–90% of the interface</p>
+
+<p><strong>Primary accent:</strong> 5–10%</p>
+
+<p><strong>Semantic:</strong> success, warning, danger</p>
+
+<p><strong>Effects:</strong> rare, used sparingly</p>
+
+<h3 id="working-with-your-primary">Working with Your Primary</h3>
+
+<p>Pick one brand color and build a scale (50–950). Use 600 as default, 700 for hover, 800 for active states.</p>
+
+<h3 id="contrast">Contrast</h3>
+
+<ul>
+  <li>4.5:1 minimum for body text</li>
+  <li>3:1 minimum for large text</li>
+</ul>
+
+<h3 id="dark-theme">Dark Theme</h3>
+
+<p>Dark theme is not an inversion. Use <code class="language-plaintext highlighter-rouge">#0f0f0f</code> for background, not <code class="language-plaintext highlighter-rouge">#000</code>. Use <code class="language-plaintext highlighter-rouge">#f0f0f0</code> for text, not <code class="language-plaintext highlighter-rouge">#fff</code>. Build a separate neutral scale.</p>
+
+<h3 id="tokens">Tokens</h3>
+
+<p>Name tokens by purpose (<code class="language-plaintext highlighter-rouge">--color-primary</code>), not by color (<code class="language-plaintext highlighter-rouge">--color-blue</code>). This makes rebranding painless.</p>
+
+<hr />
+
+<h2 id="spacing">Spacing</h2>
+
+<h3 id="the-scale">The Scale</h3>
+
+<p>Base unit: 4px or 8px. Everything multiplies from this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4px scale:  4, 8, 12, 16, 24, 32, 48, 64, 96
+8px scale:  8, 16, 24, 32, 48, 64, 96, 128
+</code></pre></div></div>
+
+<h3 id="proximity--relationship">Proximity = Relationship</h3>
+
+<p>Closer elements feel connected. Farther elements feel separate. Use spacing to communicate hierarchy and grouping.</p>
+
+<h3 id="density">Density</h3>
+
+<p>Match spacing to context: dense for dashboards (8-12px padding), default for product UI (16-24px), spacious for marketing (24-32px).</p>
+
+<h3 id="responsive">Responsive</h3>
+
+<p>Structural spacing (sections, containers) scales down 0.5-0.75x on mobile. Internal component spacing (icon-to-text, button padding) stays fixed.</p>
+
+<hr />
+
+<h2 id="motion">Motion</h2>
+
+<p>Motion serves one of three purposes: <strong>feedback</strong> (it worked), <strong>continuity</strong> (where it went), or <strong>hierarchy</strong> (look here). If it doesn’t do one of these, remove it.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Instant (hover, press, toggle)</td>
+      <td>90–150ms</td>
+    </tr>
+    <tr>
+      <td>State change (accordion, tabs)</td>
+      <td>160–240ms</td>
+    </tr>
+    <tr>
+      <td>Large transition (modal, drawer)</td>
+      <td>240–360ms</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="easing">Easing</h3>
+
+<p>Enter = ease-out. Exit = ease-in. Change = ease-in-out.</p>
+
+<h3 id="rules-1">Rules</h3>
+
+<ul>
+  <li>Always support <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code></li>
+  <li>No animation over 500ms in product UI</li>
+  <li>Never use <code class="language-plaintext highlighter-rouge">transition: all</code></li>
+</ul>
+
+<hr />
+
+<h2 id="icons">Icons</h2>
+
+<ul>
+  <li>Pick one style (outline OR solid) and stick with it</li>
+  <li>Geometric center ≠ visual center; arrows and chevrons need a 0.5–1px optical shift</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">currentColor</code> by default</li>
+  <li>Hit area should be 44×44px minimum</li>
+  <li>Action icons need <code class="language-plaintext highlighter-rouge">aria-label</code></li>
+</ul>
+
+<hr />
+
+<h2 id="the-persuasion-layer">The Persuasion Layer</h2>
+
+<p>Before you design, fill this out:</p>
+
+<p><strong>Hook</strong> (first 3 seconds): Hero headline + visual</p>
+
+<p><strong>Story arc:</strong> Problem → Solution → Proof → Action</p>
+
+<p><strong>Objection killers:</strong> List the top 3 reasons someone would hesitate</p>
+
+<p><strong>Trust signals:</strong> Social proof, guarantees, security badges, specifics</p>
+
+<p><strong>The memorable thing:</strong> What will users screenshot or tell someone about?</p>
+
+<p>If you can’t fill this out, you’re designing decoration, not persuasion.</p>
+
+<hr />
+
+<h2 id="the-soul">The Soul</h2>
+
+<p>Aim for roughly 80% proven patterns and 20% unique choices.</p>
+
+<ul>
+  <li>One bold visual choice: a color, a type treatment, an illustration style</li>
+  <li>Voice and personality in the copy</li>
+  <li>Micro-interactions that surprise</li>
+  <li>One detail users will remember</li>
+</ul>
+
+<p>The test: if someone screenshots your work, would they know it’s from <em>this</em> product?</p>
+
+<hr />
+
+<h2 id="implementation-quality-gate">Implementation Quality Gate</h2>
+
+<p>Before shipping, check:</p>
+
+<p><strong>Functional:</strong> Is the primary action obvious? Error states handled? Works on mobile?</p>
+
+<p><strong>Visual:</strong> Does the squint test pass? Spacing rhythm consistent? Typography intentional?</p>
+
+<p><strong>Persuasion:</strong> Hook in 3 seconds? Two or more trust signals? Objections addressed?</p>
+
+<p><strong>Polish:</strong> No orphaned words? Icons aligned? Buttons consistent?</p>
+
+<p>Good design isn’t about following rules blindly. It’s about making decisions you can defend, and caring about the details that most people won’t notice until they’re missing.</p>
+
+        </div>
+
+        
+<div class="share-buttons">
+  <span class="share-label">Share</span>
+  
+  
+
+  
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F22%2Fproduct-design-best-practices.html&text=Product+Design+Best+Practices" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on Twitter">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+  
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F22%2Fproduct-design-best-practices.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:?subject=Product+Design+Best+Practices&body=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F22%2Fproduct-design-best-practices.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share via Email">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+  </a>
+  
+
+  <button class="share-btn share-copy" aria-label="Copy link" data-url="https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+  </button>
+</div>
+
+<script>
+document.querySelector('.share-copy')?.addEventListener('click', function() {
+  const url = this.dataset.url;
+  navigator.clipboard.writeText(url).then(() => {
+    const original = this.innerHTML;
+    this.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+    setTimeout(() => { this.innerHTML = original; }, 2000);
+  });
+});
+</script>
+
+
+
+        <!-- Post navigation -->
+        
+          <div class="detail-nav detail-nav-post">
+            
+              <a href="/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html" class="btn btn-secondary">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+                  <path d="M9 3L4 8L9 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="btn-label">Typography in Product Design</span>
+              </a>
+            
+            
+          </div>
+        
+
+        
+
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+
+  <script src="/howdy-jekyll-theme/assets/js/theme-toggle.js"></script>
+  <script src="/howdy-jekyll-theme/assets/js/mobile-nav.js"></script>
+
+  <!-- Analytics -->
+  
+
+
+  <!-- Custom JS injection -->
+  
+
+  <script>
+  // Smooth page transitions: fade out content only, then navigate
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank') return;
+
+    const url = new URL(href, window.location.href);
+    if (url.origin === window.location.origin && url.pathname !== window.location.pathname) {
+      e.preventDefault();
+
+      if (typeof window.howdyNavIsClosing === 'function' && window.howdyNavIsClosing()) {
+        setTimeout(() => {
+          document.body.classList.add('howdy-navigating');
+          setTimeout(() => { window.location.href = href; }, 150);
+        }, 300);
+      } else {
+        document.body.classList.add('howdy-navigating');
+        setTimeout(() => { window.location.href = href; }, 150);
+      }
+    }
+  });
+  </script>
+
+  <script>
+  // Fix pagination links - add blog path prefix if missing
+  const blogPath = '/howdy-jekyll-theme/blog/';
+  document.querySelectorAll('.pagination a[href^="/page"]').forEach(link => {
+    if (!link.href.includes(blogPath)) {
+      link.href = blogPath + link.getAttribute('href').substring(1);
+    }
+  });
+  </script>
+
+  <script>
+  // TOC smooth scroll with offset and highlight
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.toc a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    target.style.transition = 'color 0.3s ease';
+    target.style.color = 'var(--howdy-accent)';
+    setTimeout(() => {
+      target.style.color = '';
+    }, 1500);
+
+    window.history.pushState(null, null, href);
+  });
+  </script>
+</body>
+</html>

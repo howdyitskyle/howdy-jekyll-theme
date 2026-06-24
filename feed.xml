@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://example.com/howdy-jekyll-theme/feed.xml" rel="self" type="application/atom+xml" /><link href="https://example.com/howdy-jekyll-theme/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-06-24T15:59:15-04:00</updated><id>https://example.com/howdy-jekyll-theme/feed.xml</id><title type="html">Howdy</title><subtitle>A clean and modern Jekyll theme for personal websites and portfolios.</subtitle><author><name>Your Name</name></author><entry><title type="html">Product Design Best Practices</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html" rel="alternate" type="text/html" title="Product Design Best Practices" /><published>2026-04-22T00:00:00-04:00</published><updated>2026-04-22T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html"><![CDATA[<p>Don’t guess. Make intentional, justified decisions.</p>
+
+<blockquote>
+  <p>If you showed this to 10 users tomorrow, what would they remember?</p>
+</blockquote>
+
+<h2 id="before-you-design-discovery">Before You Design: Discovery</h2>
+
+<p>Never design blind. Answer these first:</p>
+
+<p><strong>What</strong> are we building: Screen type, platform, scope</p>
+
+<p><strong>Who</strong> is this for: Audience, technical level</p>
+
+<p><strong>What</strong> should users do: Primary action, success metric</p>
+
+<p><strong>What</strong> feeling to evoke: Tone, energy</p>
+
+<p><strong>What job</strong> does this do: Help me decide, convince me, get me started</p>
+
+<p><strong>What</strong> objections exist: Is it worth it? Is it legit? Will it work?</p>
+
+<p><strong>What</strong> should they remember: The hook, the differentiator</p>
+
+<p><strong>Any</strong> constraints: Brand, tech requirements, inspirations</p>
+
+<p>Write a design brief before you open Figma:</p>
+
+<blockquote>
+  <p>I’m designing a <strong>[WHAT]</strong> for <strong>[WHO]</strong> that helps them <strong>[GOAL]</strong> and should feel <strong>[TONE]</strong>.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="research--analysis">Research &amp; Analysis</h2>
+
+<h3 id="research--copying-the-average">Research ≠ Copying the Average</h3>
+
+<p>Research is about understanding <em>why</em> choices work, not copying <em>what</em> everyone does.</p>
+
+<ul>
+  <li>Best practices are a starting point, not a destination</li>
+  <li>Safe often means forgettable</li>
+  <li>Document your reasoning: “Most use X, but we chose Y because…”</li>
+</ul>
+
+<h3 id="three-lenses">Three Lenses</h3>
+
+<p><strong>Structure:</strong> Layout, components, information hierarchy. Common solutions to common problems.</p>
+
+<p><strong>Visual Craft:</strong> For each strong reference, notice typography, color, spacing, details, icons, and overall vibe.</p>
+
+<p><strong>Conversion &amp; Soul:</strong> What’s the hook in the first 3 seconds? How do they handle objections? Where’s the trust? What’s unique? What microcopy has personality? What would a user remember tomorrow?</p>
+
+<h3 id="build-a-steal-list">Build a Steal List</h3>
+
+<p>When you research, document specific tactics with exact details:</p>
+
+<ul>
+  <li>“Linear: 13px/20px body, -0.01em tracking, 48px section gaps, accent at 8% opacity for hover”</li>
+  <li>Not “Linear: clean design”</li>
+</ul>
+
+<hr />
+
+<h2 id="typography">Typography</h2>
+
+<h3 id="scale">Scale</h3>
+
+<p>Use a consistent ratio: 1.2 (minor third) works well. Limit yourself to 6–8 sizes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Size</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Display (48–64px)</td>
+      <td>Hero sections</td>
+    </tr>
+    <tr>
+      <td>H1 (36–48px)</td>
+      <td>Page titles</td>
+    </tr>
+    <tr>
+      <td>H2 (24–32px)</td>
+      <td>Section headers</td>
+    </tr>
+    <tr>
+      <td>Body (16–18px)</td>
+      <td>Main content</td>
+    </tr>
+    <tr>
+      <td>Small (13–14px)</td>
+      <td>Captions, metadata</td>
+    </tr>
+    <tr>
+      <td>Caption (11–12px)</td>
+      <td>Fine print</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="leading">Leading</h3>
+
+<p>Large text = tight (1.0–1.2). Body = loose (1.5–1.6).</p>
+
+<h3 id="letter-spacing">Letter-Spacing</h3>
+
+<p>This is the detail most designers skip. Don’t:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text Type</th>
+      <th>Letter-Spacing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body (14–18px)</td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>Small text (11–13px)</td>
+      <td><code class="language-plaintext highlighter-rouge">0.01–0.02em</code></td>
+    </tr>
+    <tr>
+      <td>UI labels/buttons</td>
+      <td><code class="language-plaintext highlighter-rouge">0.02em</code></td>
+    </tr>
+    <tr>
+      <td>ALL CAPS</td>
+      <td><code class="language-plaintext highlighter-rouge">0.06–0.1em</code></td>
+    </tr>
+    <tr>
+      <td>Large headings (32px+)</td>
+      <td><code class="language-plaintext highlighter-rouge">-0.01</code> to <code class="language-plaintext highlighter-rouge">-0.02em</code></td>
+    </tr>
+    <tr>
+      <td>Display (48px+)</td>
+      <td><code class="language-plaintext highlighter-rouge">-0.02</code> to <code class="language-plaintext highlighter-rouge">-0.03em</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rules">Rules</h3>
+
+<ul>
+  <li>Line length: 50–75 characters</li>
+  <li>Max 2 typefaces</li>
+  <li>Use weights within a family before adding another font</li>
+</ul>
+
+<hr />
+
+<h2 id="color">Color</h2>
+
+<h3 id="palette-structure">Palette Structure</h3>
+
+<p><strong>Neutrals:</strong> 70–90% of the interface</p>
+
+<p><strong>Primary accent:</strong> 5–10%</p>
+
+<p><strong>Semantic:</strong> success, warning, danger</p>
+
+<p><strong>Effects:</strong> rare, used sparingly</p>
+
+<h3 id="working-with-your-primary">Working with Your Primary</h3>
+
+<p>Pick one brand color and build a scale (50–950). Use 600 as default, 700 for hover, 800 for active states.</p>
+
+<h3 id="contrast">Contrast</h3>
+
+<ul>
+  <li>4.5:1 minimum for body text</li>
+  <li>3:1 minimum for large text</li>
+</ul>
+
+<h3 id="dark-theme">Dark Theme</h3>
+
+<p>Dark theme is not an inversion. Use <code class="language-plaintext highlighter-rouge">#0f0f0f</code> for background, not <code class="language-plaintext highlighter-rouge">#000</code>. Use <code class="language-plaintext highlighter-rouge">#f0f0f0</code> for text, not <code class="language-plaintext highlighter-rouge">#fff</code>. Build a separate neutral scale.</p>
+
+<h3 id="tokens">Tokens</h3>
+
+<p>Name tokens by purpose (<code class="language-plaintext highlighter-rouge">--color-primary</code>), not by color (<code class="language-plaintext highlighter-rouge">--color-blue</code>). This makes rebranding painless.</p>
+
+<hr />
+
+<h2 id="spacing">Spacing</h2>
+
+<h3 id="the-scale">The Scale</h3>
+
+<p>Base unit: 4px or 8px. Everything multiplies from this.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4px scale:  4, 8, 12, 16, 24, 32, 48, 64, 96
+8px scale:  8, 16, 24, 32, 48, 64, 96, 128
+</code></pre></div></div>
+
+<h3 id="proximity--relationship">Proximity = Relationship</h3>
+
+<p>Closer elements feel connected. Farther elements feel separate. Use spacing to communicate hierarchy and grouping.</p>
+
+<h3 id="density">Density</h3>
+
+<p>Match spacing to context: dense for dashboards (8-12px padding), default for product UI (16-24px), spacious for marketing (24-32px).</p>
+
+<h3 id="responsive">Responsive</h3>
+
+<p>Structural spacing (sections, containers) scales down 0.5-0.75x on mobile. Internal component spacing (icon-to-text, button padding) stays fixed.</p>
+
+<hr />
+
+<h2 id="motion">Motion</h2>
+
+<p>Motion serves one of three purposes: <strong>feedback</strong> (it worked), <strong>continuity</strong> (where it went), or <strong>hierarchy</strong> (look here). If it doesn’t do one of these, remove it.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Instant (hover, press, toggle)</td>
+      <td>90–150ms</td>
+    </tr>
+    <tr>
+      <td>State change (accordion, tabs)</td>
+      <td>160–240ms</td>
+    </tr>
+    <tr>
+      <td>Large transition (modal, drawer)</td>
+      <td>240–360ms</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="easing">Easing</h3>
+
+<p>Enter = ease-out. Exit = ease-in. Change = ease-in-out.</p>
+
+<h3 id="rules-1">Rules</h3>
+
+<ul>
+  <li>Always support <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code></li>
+  <li>No animation over 500ms in product UI</li>
+  <li>Never use <code class="language-plaintext highlighter-rouge">transition: all</code></li>
+</ul>
+
+<hr />
+
+<h2 id="icons">Icons</h2>
+
+<ul>
+  <li>Pick one style (outline OR solid) and stick with it</li>
+  <li>Geometric center ≠ visual center; arrows and chevrons need a 0.5–1px optical shift</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">currentColor</code> by default</li>
+  <li>Hit area should be 44×44px minimum</li>
+  <li>Action icons need <code class="language-plaintext highlighter-rouge">aria-label</code></li>
+</ul>
+
+<hr />
+
+<h2 id="the-persuasion-layer">The Persuasion Layer</h2>
+
+<p>Before you design, fill this out:</p>
+
+<p><strong>Hook</strong> (first 3 seconds): Hero headline + visual</p>
+
+<p><strong>Story arc:</strong> Problem → Solution → Proof → Action</p>
+
+<p><strong>Objection killers:</strong> List the top 3 reasons someone would hesitate</p>
+
+<p><strong>Trust signals:</strong> Social proof, guarantees, security badges, specifics</p>
+
+<p><strong>The memorable thing:</strong> What will users screenshot or tell someone about?</p>
+
+<p>If you can’t fill this out, you’re designing decoration, not persuasion.</p>
+
+<hr />
+
+<h2 id="the-soul">The Soul</h2>
+
+<p>Aim for roughly 80% proven patterns and 20% unique choices.</p>
+
+<ul>
+  <li>One bold visual choice: a color, a type treatment, an illustration style</li>
+  <li>Voice and personality in the copy</li>
+  <li>Micro-interactions that surprise</li>
+  <li>One detail users will remember</li>
+</ul>
+
+<p>The test: if someone screenshots your work, would they know it’s from <em>this</em> product?</p>
+
+<hr />
+
+<h2 id="implementation-quality-gate">Implementation Quality Gate</h2>
+
+<p>Before shipping, check:</p>
+
+<p><strong>Functional:</strong> Is the primary action obvious? Error states handled? Works on mobile?</p>
+
+<p><strong>Visual:</strong> Does the squint test pass? Spacing rhythm consistent? Typography intentional?</p>
+
+<p><strong>Persuasion:</strong> Hook in 3 seconds? Two or more trust signals? Objections addressed?</p>
+
+<p><strong>Polish:</strong> No orphaned words? Icons aligned? Buttons consistent?</p>
+
+<p>Good design isn’t about following rules blindly. It’s about making decisions you can defend, and caring about the details that most people won’t notice until they’re missing.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><category term="methodology" /><category term="process" /><category term="best practices" /><category term="craft" /><summary type="html"><![CDATA[Professional design methodology — intentional, justified decisions that hold up to user testing.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Typography in Product Design</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html" rel="alternate" type="text/html" title="Typography in Product Design" /><published>2026-04-20T00:00:00-04:00</published><updated>2026-04-20T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html"><![CDATA[<p>Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density.</p>
+
+<h2 id="the-product-designers-typographic-system">The Product Designer’s Typographic System</h2>
+
+<p><strong>Scale, not sizes.</strong> Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages.</p>
+
+<p><strong>Weights over families.</strong> A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason.</p>
+
+<p><strong>Line length matters.</strong> 60-75 characters per line is the sweet spot for readability. In dense dashboards, you might go shorter, but never below 40.</p>
+
+<h2 id="dark-mode-considerations">Dark Mode Considerations</h2>
+
+<p>Text in dark mode isn’t just inverted white-on-black. Reduce contrast slightly to prevent eye strain. I use <code class="language-plaintext highlighter-rouge">#E5E5E5</code> on <code class="language-plaintext highlighter-rouge">#1A1A1A</code> instead of pure white on pure black.</p>
+
+<!--more-->
+
+<p>The best typography system is the one users never notice. When reading feels effortless, the system is working.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density. The Product Designer’s Typographic System Scale, not sizes. Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages. Weights over families. A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason. Line length matters. 60-75 characters per line is the sweet spot for readability. In dense dashboards, you might go shorter, but never below 40. Dark Mode Considerations Text in dark mode isn’t just inverted white-on-black. Reduce contrast slightly to prevent eye strain. I use #E5E5E5 on #1A1A1A instead of pure white on pure black.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Designing with Motion</title><link href="https://example.com/howdy-jekyll-theme/inspiration/2026/04/19/motion-design.html" rel="alternate" type="text/html" title="Designing with Motion" /><published>2026-04-19T00:00:00-04:00</published><updated>2026-04-19T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/inspiration/2026/04/19/motion-design</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/inspiration/2026/04/19/motion-design.html"><![CDATA[<p>Motion in product design serves a purpose: it communicates relationships, directs attention, and makes interactions feel natural. When done well, users don’t notice it. When done poorly, everything feels broken.</p>
+
+<h2 id="the-rules-i-follow">The Rules I Follow</h2>
+
+<p><strong>Duration.</strong> Transitions should be between 150ms and 300ms. Under 150ms feels jarring. Over 300ms feels sluggish. Page transitions can go to 400ms.</p>
+
+<p><strong>Easing.</strong> Linear motion feels robotic. Use <code class="language-plaintext highlighter-rouge">cubic-bezier(0.22, 1, 0.36, 1)</code> for entrances; it feels natural and responsive. For exits, ease-out is your friend.</p>
+
+<p><strong>Transform, not layout.</strong> Always animate <code class="language-plaintext highlighter-rouge">transform</code> and <code class="language-plaintext highlighter-rouge">opacity</code>. Never animate <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code>, <code class="language-plaintext highlighter-rouge">margin</code>, or <code class="language-plaintext highlighter-rouge">padding</code>. They trigger layout recalculation and feel choppy.</p>
+
+<h2 id="where-motion-matters-most">Where Motion Matters Most</h2>
+
+<p><strong>State changes.</strong> When a card expands into a detail view, the transition should maintain spatial continuity. Shared element transitions make this possible.</p>
+
+<p><strong>Loading states.</strong> Replace spinners with skeleton screens that mimic the actual content structure. Add a subtle shimmer: not too bright, not too fast.</p>
+
+<p><strong>Feedback.</strong> Micro-interactions like button presses, toggle switches, and checkboxes should provide tactile confirmation of the action.</p>
+
+<!--more-->
+
+<p>Motion is the glue between interface states. Without it, your product feels like a series of disconnected snapshots. With it, everything flows.</p>]]></content><author><name>Your Name</name></author><category term="Inspiration" /><summary type="html"><![CDATA[Motion in product design serves a purpose: it communicates relationships, directs attention, and makes interactions feel natural. When done well, users don’t notice it. When done poorly, everything feels broken. The Rules I Follow Duration. Transitions should be between 150ms and 300ms. Under 150ms feels jarring. Over 300ms feels sluggish. Page transitions can go to 400ms. Easing. Linear motion feels robotic. Use cubic-bezier(0.22, 1, 0.36, 1) for entrances; it feels natural and responsive. For exits, ease-out is your friend. Transform, not layout. Always animate transform and opacity. Never animate width, height, margin, or padding. They trigger layout recalculation and feel choppy. Where Motion Matters Most State changes. When a card expands into a detail view, the transition should maintain spatial continuity. Shared element transitions make this possible. Loading states. Replace spinners with skeleton screens that mimic the actual content structure. Add a subtle shimmer: not too bright, not too fast. Feedback. Micro-interactions like button presses, toggle switches, and checkboxes should provide tactile confirmation of the action.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/online-shopping.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/online-shopping.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Accessibility Is a Design Constraint, Not a Feature</title><link href="https://example.com/howdy-jekyll-theme/freebies/2026/04/18/accessibility-matters.html" rel="alternate" type="text/html" title="Accessibility Is a Design Constraint, Not a Feature" /><published>2026-04-18T00:00:00-04:00</published><updated>2026-04-18T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/freebies/2026/04/18/accessibility-matters</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/freebies/2026/04/18/accessibility-matters.html"><![CDATA[<p>Too often, accessibility gets treated as a checklist item at the end of a project. “We’ll add alt text later.” “Let’s check contrast before launch.” This approach guarantees mediocrity.</p>
+
+<h2 id="accessibility-from-day-one">Accessibility from Day One</h2>
+
+<p>When you design with accessibility as a constraint from the start, you end up with better products for everyone. Curb cuts were designed for wheelchair users, yet everyone benefits.</p>
+
+<p><strong>Color isn’t information.</strong> Never rely on color alone to convey meaning. Pair color with icons, labels, or patterns. Your red/green status indicators are meaningless to 8% of men.</p>
+
+<p><strong>Keyboard-first thinking.</strong> Design every interaction to work without a mouse. This forces you to think about focus states, tab order, and logical grouping. It improves the experience for everyone.</p>
+
+<h2 id="the-business-case">The Business Case</h2>
+
+<p>Accessible products reach more users. They perform better in search. They’re more resilient to edge cases. And they avoid legal risk. There is no scenario where ignoring accessibility is the right call.</p>
+
+<!--more-->
+
+<p>If you’re designing a product that isn’t accessible to everyone, you’re not designing a product. You’re designing an exclusion.</p>]]></content><author><name>Your Name</name></author><category term="Freebies" /><summary type="html"><![CDATA[Too often, accessibility gets treated as a checklist item at the end of a project. “We’ll add alt text later.” “Let’s check contrast before launch.” This approach guarantees mediocrity. Accessibility from Day One When you design with accessibility as a constraint from the start, you end up with better products for everyone. Curb cuts were designed for wheelchair users, yet everyone benefits. Color isn’t information. Never rely on color alone to convey meaning. Pair color with icons, labels, or patterns. Your red/green status indicators are meaningless to 8% of men. Keyboard-first thinking. Design every interaction to work without a mouse. This forces you to think about focus states, tab order, and logical grouping. It improves the experience for everyone. The Business Case Accessible products reach more users. They perform better in search. They’re more resilient to edge cases. And they avoid legal risk. There is no scenario where ignoring accessibility is the right call.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/mobile-shopping.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/mobile-shopping.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building Design Systems That Scale</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/16/building-design-systems.html" rel="alternate" type="text/html" title="Building Design Systems That Scale" /><published>2026-04-16T00:00:00-04:00</published><updated>2026-04-16T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/04/16/building-design-systems</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/04/16/building-design-systems.html"><![CDATA[<p>A design system isn’t a Figma file with components. It’s a living agreement between design and engineering about how products should be built.</p>
+
+<h2 id="the-architecture">The Architecture</h2>
+
+<p><strong>Tokens are the foundation.</strong> Colors, spacing, typography scales, radii, shadows: these are your primitives. Everything else is composed from them.</p>
+
+<p><strong>Primitives are simple components.</strong> Buttons, inputs, badges. They map directly to HTML elements and are consumed by patterns.</p>
+
+<p><strong>Patterns solve recurring problems.</strong> Form layouts, data tables, empty states. These are where design system maturity really shows.</p>
+
+<p><strong>Product components are custom.</strong> Not everything belongs in the system. Your unique product features should be built on top of the system, not inside it.</p>
+
+<h2 id="what-ive-learned">What I’ve Learned</h2>
+
+<p>The biggest mistake teams make is over-building the system before anyone uses it. Start with what hurts the most. If everyone is building their own button, start there.</p>
+
+<!--more-->
+
+<p>The best design system I’ve ever worked on started with three tokens and a button. Everything else grew from actual need, not hypothetical completeness.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[A design system isn’t a Figma file with components. It’s a living agreement between design and engineering about how products should be built. The Architecture Tokens are the foundation. Colors, spacing, typography scales, radii, shadows: these are your primitives. Everything else is composed from them. Primitives are simple components. Buttons, inputs, badges. They map directly to HTML elements and are consumed by patterns. Patterns solve recurring problems. Form layouts, data tables, empty states. These are where design system maturity really shows. Product components are custom. Not everything belongs in the system. Your unique product features should be built on top of the system, not inside it. What I’ve Learned The biggest mistake teams make is over-building the system before anyone uses it. Start with what hurts the most. If everyone is building their own button, start there.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/presentation.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/presentation.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Case for Visual Hierarchy</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/15/crafting-visual-hierarchy.html" rel="alternate" type="text/html" title="The Case for Visual Hierarchy" /><published>2026-04-15T00:00:00-04:00</published><updated>2026-04-15T00:00:00-04:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/04/15/crafting-visual-hierarchy</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/04/15/crafting-visual-hierarchy.html"><![CDATA[<p>Every interface is a conversation between the product and the user. Visual hierarchy is how you control what gets said first, what gets emphasized, and what stays quiet.</p>
+
+<h2 id="the-four-levers">The Four Levers</h2>
+
+<p><strong>Size.</strong> Larger elements attract attention first. But size alone is blunt. Use it sparingly.</p>
+
+<p><strong>Weight.</strong> Bold text creates emphasis without changing the spatial layout. It’s the most surgical tool in your hierarchy toolkit.</p>
+
+<p><strong>Color.</strong> High-contrast colors draw the eye. Muted tones recede. Use color to signal importance, not decoration.</p>
+
+<p><strong>Spacing.</strong> White space is the most underused hierarchy tool. More space around an element makes it feel more important. Less space groups related items together.</p>
+
+<h2 id="common-mistakes">Common Mistakes</h2>
+
+<p>Making everything important makes nothing important. If every element is bold, large, and colorful, you’ve created noise, not hierarchy.</p>
+
+<!--more-->
+
+<p>Good hierarchy doesn’t need to be explained. Users should instinctively know where to look and what to do next. If you have to tell them, the hierarchy has failed.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[Every interface is a conversation between the product and the user. Visual hierarchy is how you control what gets said first, what gets emphasized, and what stays quiet. The Four Levers Size. Larger elements attract attention first. But size alone is blunt. Use it sparingly. Weight. Bold text creates emphasis without changing the spatial layout. It’s the most surgical tool in your hierarchy toolkit. Color. High-contrast colors draw the eye. Muted tones recede. Use color to signal importance, not decoration. Spacing. White space is the most underused hierarchy tool. More space around an element makes it feel more important. Less space groups related items together. Common Mistakes Making everything important makes nothing important. If every element is bold, large, and colorful, you’ve created noise, not hierarchy.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/travel-booking-hotel.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/travel-booking-hotel.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mobile-First Is Dead. Content-First Lives On.</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/01/10/mobile-first.html" rel="alternate" type="text/html" title="Mobile-First Is Dead. Content-First Lives On." /><published>2026-01-10T00:00:00-05:00</published><updated>2026-01-10T00:00:00-05:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/01/10/mobile-first</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/01/10/mobile-first.html"><![CDATA[<p>The mobile-first movement served its purpose, but it’s an outdated heuristic for a world where users fluidly move between devices, screens, and input methods.</p>
+
+<h2 id="the-problem-with-mobile-first">The Problem with Mobile-First</h2>
+
+<p>Starting with the smallest screen forces you to prioritize, which is good. But it also forces you to design for constraints that may not exist on other surfaces, leading to experiences that feel compromised rather than adapted.</p>
+
+<h2 id="content-first-design">Content-First Design</h2>
+
+<p>Start with the information. What is the user trying to accomplish? What data do they need? What decisions do they need to make? Then let the layout serve the content, not the device.</p>
+
+<p><strong>Information hierarchy is device-agnostic.</strong> A user’s need to understand their data doesn’t change between mobile and desktop. Only the presentation changes.</p>
+
+<p><strong>Interaction patterns adapt.</strong> Touch vs. mouse, portrait vs. landscape, single-task vs. multi-window. These are interaction concerns, not content concerns.</p>
+
+<!--more-->
+
+<p>Don’t design for a screen size. Design for a human need, then let the interface adapt.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[The mobile-first movement served its purpose, but it’s an outdated heuristic for a world where users fluidly move between devices, screens, and input methods. The Problem with Mobile-First Starting with the smallest screen forces you to prioritize, which is good. But it also forces you to design for constraints that may not exist on other surfaces, leading to experiences that feel compromised rather than adapted. Content-First Design Start with the information. What is the user trying to accomplish? What data do they need? What decisions do they need to make? Then let the layout serve the content, not the device. Information hierarchy is device-agnostic. A user’s need to understand their data doesn’t change between mobile and desktop. Only the presentation changes. Interaction patterns adapt. Touch vs. mouse, portrait vs. landscape, single-task vs. multi-window. These are interaction concerns, not content concerns.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/love-animals.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/love-animals.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Performance Is a Feature</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/01/09/web-performance.html" rel="alternate" type="text/html" title="Performance Is a Feature" /><published>2026-01-09T00:00:00-05:00</published><updated>2026-01-09T00:00:00-05:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/01/09/web-performance</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/01/09/web-performance.html"><![CDATA[<p>Users don’t forgive slow products. No amount of beautiful design can compensate for an interface that feels sluggish. Performance isn’t an engineering concern; it’s a design concern.</p>
+
+<h2 id="the-perception-of-speed">The Perception of Speed</h2>
+
+<p>What users feel isn’t the same as what actually happens. A 200ms perceived delay feels instant. A 500ms delay feels noticeable. Anything over 1 second feels broken.</p>
+
+<p><strong>Optimistic UI.</strong> Update the interface immediately, then confirm with the server. This makes products feel instant even when they’re not.</p>
+
+<p><strong>Skeleton screens.</strong> Better than spinners because they show the user what’s coming, reducing perceived wait time.</p>
+
+<h2 id="design-decisions-that-impact-performance">Design Decisions That Impact Performance</h2>
+
+<p>Every image, every animation, every custom font you add costs something. The question isn’t “can we afford this?” It’s “is this worth the trade-off?”</p>
+
+<!--more-->
+
+<p>The fastest interface is the one that doesn’t load at all. Progressive enhancement means your core experience works before your enhancements arrive.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[Users don’t forgive slow products. No amount of beautiful design can compensate for an interface that feels sluggish. Performance isn’t an engineering concern; it’s a design concern. The Perception of Speed What users feel isn’t the same as what actually happens. A 200ms perceived delay feels instant. A 500ms delay feels noticeable. Anything over 1 second feels broken. Optimistic UI. Update the interface immediately, then confirm with the server. This makes products feel instant even when they’re not. Skeleton screens. Better than spinners because they show the user what’s coming, reducing perceived wait time. Design Decisions That Impact Performance Every image, every animation, every custom font you add costs something. The question isn’t “can we afford this?” It’s “is this worth the trade-off?”]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/meeting.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/meeting.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Responsive Design Beyond Breakpoints</title><link href="https://example.com/howdy-jekyll-theme/tutorials/2026/01/08/responsive-design.html" rel="alternate" type="text/html" title="Responsive Design Beyond Breakpoints" /><published>2026-01-08T00:00:00-05:00</published><updated>2026-01-08T00:00:00-05:00</updated><id>https://example.com/howdy-jekyll-theme/tutorials/2026/01/08/responsive-design</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/tutorials/2026/01/08/responsive-design.html"><![CDATA[<p>Responsive design isn’t about choosing breakpoints. It’s about building layouts that flow naturally across any viewport.</p>
+
+<h2 id="the-fluid-approach">The Fluid Approach</h2>
+
+<p><strong>Use <code class="language-plaintext highlighter-rouge">clamp()</code> for typography.</strong> <code class="language-plaintext highlighter-rouge">clamp(1rem, 2vw + 0.5rem, 1.5rem)</code> gives you smooth scaling between min and max sizes without media queries.</p>
+
+<p><strong>Flex and Grid are your foundation.</strong> Stop setting fixed widths. Let content determine the layout, and use <code class="language-plaintext highlighter-rouge">minmax()</code> and <code class="language-plaintext highlighter-rouge">auto-fit</code> to handle the edges.</p>
+
+<p><strong>Test on real devices.</strong> Browser resize isn’t enough. Touch targets, hover states, and scrolling behavior differ fundamentally between input methods.</p>
+
+<h2 id="what-ive-changed-my-mind-about">What I’ve Changed My Mind About</h2>
+
+<p>I used to design mobile-first and scale up. Now I design content-first: start with the information hierarchy, then let the layout adapt. Mobile and desktop are just different ways of consuming the same structure.</p>
+
+<!--more-->
+
+<p>The best responsive designs don’t feel responsive. They feel like they were made exactly for the screen you’re holding.</p>]]></content><author><name>Your Name</name></author><category term="Tutorials" /><summary type="html"><![CDATA[Responsive design isn’t about choosing breakpoints. It’s about building layouts that flow naturally across any viewport. The Fluid Approach Use clamp() for typography. clamp(1rem, 2vw + 0.5rem, 1.5rem) gives you smooth scaling between min and max sizes without media queries. Flex and Grid are your foundation. Stop setting fixed widths. Let content determine the layout, and use minmax() and auto-fit to handle the edges. Test on real devices. Browser resize isn’t enough. Touch targets, hover states, and scrolling behavior differ fundamentally between input methods. What I’ve Changed My Mind About I used to design mobile-first and scale up. Now I design content-first: start with the information hierarchy, then let the layout adapt. Mobile and desktop are just different ways of consuming the same structure.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/friends-taking-selfie.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/friends-taking-selfie.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Psychology of Color in Interfaces</title><link href="https://example.com/howdy-jekyll-theme/inspiration/2026/01/07/color-theory.html" rel="alternate" type="text/html" title="The Psychology of Color in Interfaces" /><published>2026-01-07T00:00:00-05:00</published><updated>2026-01-07T00:00:00-05:00</updated><id>https://example.com/howdy-jekyll-theme/inspiration/2026/01/07/color-theory</id><content type="html" xml:base="https://example.com/howdy-jekyll-theme/inspiration/2026/01/07/color-theory.html"><![CDATA[<p>Color in product design isn’t about aesthetics. It’s about information architecture. Your color system is a map: it tells users where they are, what’s important, and what actions are available.</p>
+
+<h2 id="building-a-color-system">Building a Color System</h2>
+
+<p><strong>Start with semantics.</strong> Name your colors by their purpose, not their appearance. <code class="language-plaintext highlighter-rouge">--color-success</code>, <code class="language-plaintext highlighter-rouge">--color-error</code>, <code class="language-plaintext highlighter-rouge">--color-warning</code>. This makes your system resilient to rebranding.</p>
+
+<p><strong>Limit your palette.</strong> Three primary colors, three semantic colors, and a grayscale scale. That’s enough for 95% of interfaces.</p>
+
+<p><strong>Dark mode isn’t an inversion.</strong> You need to rethink contrast, saturation, and elevation. Shadows don’t work in dark mode. Use overlays instead.</p>
+
+<h2 id="the-green-problem">The Green Problem</h2>
+
+<p>Green means success, go, and positive change. But in financial contexts, green means money going up. In environmental contexts, it means sustainability. Context matters.</p>
+
+<!--more-->
+
+<p>The best color system is the one that tells a consistent story across every surface. When users see a color, they should know exactly what it means.</p>]]></content><author><name>Your Name</name></author><category term="Inspiration" /><summary type="html"><![CDATA[Color in product design isn’t about aesthetics. It’s about information architecture. Your color system is a map: it tells users where they are, what’s important, and what actions are available. Building a Color System Start with semantics. Name your colors by their purpose, not their appearance. --color-success, --color-error, --color-warning. This makes your system resilient to rebranding. Limit your palette. Three primary colors, three semantic colors, and a grayscale scale. That’s enough for 95% of interfaces. Dark mode isn’t an inversion. You need to rethink contrast, saturation, and elevation. Shadows don’t work in dark mode. Use overlays instead. The Green Problem Green means success, go, and positive change. But in financial contexts, green means money going up. In environmental contexts, it means sustainability. Context matters.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" /><media:content medium="image" url="https://example.com/howdy-jekyll-theme/assets/illustrations/tasks-complete.svg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

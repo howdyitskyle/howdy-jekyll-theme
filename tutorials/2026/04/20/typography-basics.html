@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple langu...">
+
+<!-- Theme color -->
+
+<meta name="theme-color" content="#008a1e">
+
+
+<!-- Favicons -->
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+
+
+<link rel="apple-touch-icon" href="/howdy-jekyll-theme/assets/images/apple-touch-icon.png">
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:description" content="Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple langu...">
+
+
+<meta property="og:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple langu...">
+
+<meta name="twitter:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg">
+
+
+<!-- RSS Feed -->
+<link type="application/atom+xml" rel="alternate" href="https://example.com/howdy-jekyll-theme/feed.xml" title="Howdy" />
+
+<!-- SEO Tag -->
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Typography in Product Design | Howdy</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Typography in Product Design" />
+<meta name="author" content="Your Name" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density. The Product Designer’s Typographic System Scale, not sizes. Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages. Weights over families. A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason. Line length matters. 60-75 characters per line is the sweet spot for…" />
+<meta name="twitter:description" property="og:description" content="Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density. The Product Designer’s Typographic System Scale, not sizes. Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages. Weights over families. A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason. Line length matters. 60-75 characters per line is the sweet spot for…" />
+<link rel="canonical" href="https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html" />
+<meta property="og:url" content="https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html" />
+<meta property="og:site_name" content="Howdy" />
+<meta property="og:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-04-20T00:00:00-04:00" />
+<meta property="article:modified_time" content="2026-04-20T00:00:00-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg" />
+<meta name="twitter:title" content="Typography in Product Design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Your Name"},"dateModified":"2026-04-20T00:00:00-04:00","datePublished":"2026-04-20T00:00:00-04:00","description":"Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density. The Product Designer’s Typographic System Scale, not sizes. Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages. Weights over families. A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason. Line length matters. 60-75 characters per line is the sweet spot for…","headline":"Typography in Product Design","image":"https://example.com/howdy-jekyll-theme/assets/illustrations/podcast.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html"},"url":"https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+<!-- Local fonts -->
+<style>
+  @font-face {
+    font-family: 'Chaumont Script';
+    src: url('/howdy-jekyll-theme/assets/fonts/ChaumontScript-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Italic-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+</style>
+
+<!-- Custom CSS injection -->
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/swiper-bundle.min.css">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/main.css">
+
+<!-- Dark mode script (inline for immediate execution) -->
+<script>
+  (function() {
+    const root = document.documentElement;
+    const saved = localStorage.getItem('howdy-theme');
+    
+    if (saved === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (saved === 'light') {
+      root.classList.add('light-mode');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      root.classList.add('dark-mode');
+    }
+    
+  })();
+</script>
+
+<!-- Theme toggle icon state — set before first paint to prevent flash -->
+<style>
+  .sun-icon { display: none; }
+  .moon-icon { display: block; }
+  html.dark-mode .sun-icon { display: block; }
+  html.dark-mode .moon-icon { display: none; }
+</style>
+
+<!-- Page reveal — content starts hidden, revealed after first paint -->
+<style>
+  .hero-content,
+  .content-area > *,
+  .company-logos,
+  .hero-carousel,
+  .logo-overlay {
+    opacity: 0;
+  }
+</style>
+<script>
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      document.body.classList.add('loaded');
+    });
+  });
+</script>
+
+</head>
+<body>
+  <div class="main-container">
+    <section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+  <img src="/howdy-jekyll-theme/assets/illustrations/podcast.svg" alt="Hero" class="hero-image">
+
+
+          <div class="logo-overlay"><a href="/howdy-jekyll-theme/" class="site-logo" aria-label="Howdy">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="160" height="80" class="site-logo-svg" role="img" aria-hidden="true">
+    <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle" class="logo-text">Howdy</text>
+  </svg>
+</a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span class="nav-toggle-icon"></span>
+</button>
+
+<div class="nav-overlay"></div>
+
+<nav class="site-nav">
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/"  >Home</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/about"  >About</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/projects"  >Projects</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/blog"  >Blog</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/contact"  >Contact</a>
+  
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun icon (shown in dark mode) -->
+  <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/>
+    <line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/>
+    <line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+  <!-- Moon icon (shown in light mode) -->
+  <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+</button>
+
+</nav>
+
+      <div class="content-area">
+        
+          <div class="detail-meta">
+            
+              <span class="post-category category-tutorials">Tutorials</span>
+            
+            
+              <span class="detail-date">Apr 20, 2026</span>
+            
+            
+              
+              
+              <span class="detail-read-time">1 min read</span>
+            
+          </div>
+        
+
+        <h1>Typography in Product Design</h1>
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+<nav class="toc" aria-label="Table of contents">
+  <span class="toc-title">On this page</span>
+  
+    <a href="#the-product-designers-typographic-system" style="padding-left:0px;">The Product Designer’s Typographic System</a>
+  
+    <a href="#dark-mode-considerations" style="padding-left:0px;">Dark Mode Considerations</a>
+  
+</nav>
+
+
+        
+
+        <div class="detail-content">
+          <p>Typography in product design isn’t about choosing beautiful typefaces. It’s about building a system that scales across every surface, supports multiple languages, and remains readable at every density.</p>
+
+<h2 id="the-product-designers-typographic-system">The Product Designer’s Typographic System</h2>
+
+<p><strong>Scale, not sizes.</strong> Use a modular scale with defined ratios. I prefer 1.25 (major third) for dense interfaces and 1.333 (perfect fourth) for content-heavy pages.</p>
+
+<p><strong>Weights over families.</strong> A single well-chosen type family with 5-7 weights gives you more flexibility than switching between families. DM Sans, Inter, and SF Pro are workhorses for a reason.</p>
+
+<p><strong>Line length matters.</strong> 60-75 characters per line is the sweet spot for readability. In dense dashboards, you might go shorter, but never below 40.</p>
+
+<h2 id="dark-mode-considerations">Dark Mode Considerations</h2>
+
+<p>Text in dark mode isn’t just inverted white-on-black. Reduce contrast slightly to prevent eye strain. I use <code class="language-plaintext highlighter-rouge">#E5E5E5</code> on <code class="language-plaintext highlighter-rouge">#1A1A1A</code> instead of pure white on pure black.</p>
+
+<!--more-->
+
+<p>The best typography system is the one users never notice. When reading feels effortless, the system is working.</p>
+
+        </div>
+
+        
+<div class="share-buttons">
+  <span class="share-label">Share</span>
+  
+  
+
+  
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F20%2Ftypography-basics.html&text=Typography+in+Product+Design" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on Twitter">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+  
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F20%2Ftypography-basics.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:?subject=Typography+in+Product+Design&body=https%3A%2F%2Fexample.com%2Fhowdy-jekyll-theme%2Ftutorials%2F2026%2F04%2F20%2Ftypography-basics.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share via Email">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+  </a>
+  
+
+  <button class="share-btn share-copy" aria-label="Copy link" data-url="https://example.com/howdy-jekyll-theme/tutorials/2026/04/20/typography-basics.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+  </button>
+</div>
+
+<script>
+document.querySelector('.share-copy')?.addEventListener('click', function() {
+  const url = this.dataset.url;
+  navigator.clipboard.writeText(url).then(() => {
+    const original = this.innerHTML;
+    this.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+    setTimeout(() => { this.innerHTML = original; }, 2000);
+  });
+});
+</script>
+
+
+
+        <!-- Post navigation -->
+        
+          <div class="detail-nav detail-nav-post">
+            
+              <a href="/howdy-jekyll-theme/inspiration/2026/04/19/motion-design.html" class="btn btn-secondary">
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+                  <path d="M9 3L4 8L9 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="btn-label">Designing with Motion</span>
+              </a>
+            
+            
+              <a href="/howdy-jekyll-theme/tutorials/2026/04/22/product-design-best-practices.html" class="btn btn-secondary post-nav-next">
+                <span class="btn-label">Product Design Best Practices</span>
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+                  <path d="M7 3L12 8L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            
+          </div>
+        
+
+        
+
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+
+  <script src="/howdy-jekyll-theme/assets/js/theme-toggle.js"></script>
+  <script src="/howdy-jekyll-theme/assets/js/mobile-nav.js"></script>
+
+  <!-- Analytics -->
+  
+
+
+  <!-- Custom JS injection -->
+  
+
+  <script>
+  // Smooth page transitions: fade out content only, then navigate
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank') return;
+
+    const url = new URL(href, window.location.href);
+    if (url.origin === window.location.origin && url.pathname !== window.location.pathname) {
+      e.preventDefault();
+
+      if (typeof window.howdyNavIsClosing === 'function' && window.howdyNavIsClosing()) {
+        setTimeout(() => {
+          document.body.classList.add('howdy-navigating');
+          setTimeout(() => { window.location.href = href; }, 150);
+        }, 300);
+      } else {
+        document.body.classList.add('howdy-navigating');
+        setTimeout(() => { window.location.href = href; }, 150);
+      }
+    }
+  });
+  </script>
+
+  <script>
+  // Fix pagination links - add blog path prefix if missing
+  const blogPath = '/howdy-jekyll-theme/blog/';
+  document.querySelectorAll('.pagination a[href^="/page"]').forEach(link => {
+    if (!link.href.includes(blogPath)) {
+      link.href = blogPath + link.getAttribute('href').substring(1);
+    }
+  });
+  </script>
+
+  <script>
+  // TOC smooth scroll with offset and highlight
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.toc a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    target.style.transition = 'color 0.3s ease';
+    target.style.color = 'var(--howdy-accent)';
+    setTimeout(() => {
+      target.style.color = '';
+    }, 1500);
+
+    window.history.pushState(null, null, href);
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="A clean and modern Jekyll theme for personal websites and portfolios.">
+
+<!-- Theme color -->
+
+<meta name="theme-color" content="#008a1e">
+
+
+<!-- Favicons -->
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+
+<link rel="icon" href="/howdy-jekyll-theme/assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+
+
+<link rel="apple-touch-icon" href="/howdy-jekyll-theme/assets/images/apple-touch-icon.png">
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:description" content="A clean and modern Jekyll theme for personal websites and portfolios.">
+
+
+<meta property="og:image" content="https://example.com/howdy-jekyll-theme/assets/images/og-image.png">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="A clean and modern Jekyll theme for personal websites and portfolios.">
+
+<meta name="twitter:image" content="https://example.com/howdy-jekyll-theme/assets/images/og-image.png">
+
+
+<!-- RSS Feed -->
+<link type="application/atom+xml" rel="alternate" href="https://example.com/howdy-jekyll-theme/feed.xml" title="Howdy" />
+
+<!-- SEO Tag -->
+<!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Howdy | A clean and modern Jekyll theme for personal websites and portfolios.</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Howdy" />
+<meta name="author" content="Your Name" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A clean and modern Jekyll theme for personal websites and portfolios." />
+<meta name="twitter:description" property="og:description" content="A clean and modern Jekyll theme for personal websites and portfolios." />
+<link rel="canonical" href="https://example.com/howdy-jekyll-theme/about.html" />
+<meta property="og:url" content="https://example.com/howdy-jekyll-theme/about.html" />
+<meta property="og:site_name" content="Howdy" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Howdy" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Your Name"},"description":"A clean and modern Jekyll theme for personal websites and portfolios.","headline":"Howdy","url":"https://example.com/howdy-jekyll-theme/about.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+<!-- Local fonts -->
+<style>
+  @font-face {
+    font-family: 'Chaumont Script';
+    src: url('/howdy-jekyll-theme/assets/fonts/ChaumontScript-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('/howdy-jekyll-theme/assets/fonts/DMSans-Italic-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+</style>
+
+<!-- Custom CSS injection -->
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/swiper-bundle.min.css">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/howdy-jekyll-theme/assets/css/main.css">
+
+<!-- Dark mode script (inline for immediate execution) -->
+<script>
+  (function() {
+    const root = document.documentElement;
+    const saved = localStorage.getItem('howdy-theme');
+    
+    if (saved === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (saved === 'light') {
+      root.classList.add('light-mode');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      root.classList.add('dark-mode');
+    }
+    
+  })();
+</script>
+
+<!-- Theme toggle icon state — set before first paint to prevent flash -->
+<style>
+  .sun-icon { display: none; }
+  .moon-icon { display: block; }
+  html.dark-mode .sun-icon { display: block; }
+  html.dark-mode .moon-icon { display: none; }
+</style>
+
+<!-- Page reveal — content starts hidden, revealed after first paint -->
+<style>
+  .hero-content,
+  .content-area > *,
+  .company-logos,
+  .hero-carousel,
+  .logo-overlay {
+    opacity: 0;
+  }
+</style>
+<script>
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      document.body.classList.add('loaded');
+    });
+  });
+</script>
+
+</head>
+<body>
+  <div class="main-container">
+    <section class="two-column">
+  <div class="left-section">
+    <div class="left-container">
+      <div class="image-wrapper">
+        <div class="hero-content">
+          <img src="/howdy-jekyll-theme/assets/illustrations/designer.svg" alt="About hero" class="hero-image" />
+          <div class="logo-overlay"><a href="/howdy-jekyll-theme/" class="site-logo" aria-label="Howdy">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="160" height="80" class="site-logo-svg" role="img" aria-hidden="true">
+    <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle" class="logo-text">Howdy</text>
+  </svg>
+</a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="content-wrapper">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span class="nav-toggle-icon"></span>
+</button>
+
+<div class="nav-overlay"></div>
+
+<nav class="site-nav">
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/">Home</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/about" class="active">About</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/projects">Projects</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/blog">Blog</a>
+  
+    
+    
+    
+
+    
+
+    <a href="/howdy-jekyll-theme/contact">Contact</a>
+  
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun icon (shown in dark mode) -->
+  <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="5" />
+    <line x1="12" y1="1" x2="12" y2="3" />
+    <line x1="12" y1="21" x2="12" y2="23" />
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+    <line x1="1" y1="12" x2="3" y2="12" />
+    <line x1="21" y1="12" x2="23" y2="12" />
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+  </svg>
+  <!-- Moon icon (shown in light mode) -->
+  <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </svg>
+</button>
+
+</nav>
+
+
+      <div class="content-area">
+        
+        <h1>Designing with<br />intention, shipping<br /><span class="text-muted">with purpose</span></h1>
+        
+
+        <p class="body-large about-intro">
+          I've spent the last 8 years designing B2B SaaS products: design systems, analytics platforms, and AI-powered tools. I work in problem spaces where the UX patterns don't exist yet and need to be invented rather than applied.
+
+        </p>
+
+        
+        <p class="about-body">
+          I work at the intersection of design and engineering: I prototype in code, contribute to component libraries, and think in design tokens rather than pixel specs. The tools change (Figma, SwiftUI, React, Framer) but the practice stays the same: understand the user, build the right abstraction, iterate until it's invisible.
+
+        </p>
+        
+
+        
+        <p class="about-body-muted">
+          I've shipped products used by teams at companies ranging from early-stage startups to 500-person orgs. I'm looking for my next challenge: somewhere I can work on hard problems with people who care about craft.
+        </p>
+        
+
+        
+        <div class="about-resume-wrapper">
+          <a href="/howdy-jekyll-theme/assets/resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        </div>
+        
+
+        
+        <div class="about-testimonials">
+          <h2 class="about-testimonials-heading">What people say</h2>
+          
+          <blockquote class="about-testimonial">
+            <p class="about-testimonial-quote">&ldquo;The best design system I've ever worked with. Period. She made the complex feel inevitable.&rdquo;</p>
+            <footer class="about-testimonial-attribution">&mdash; Alex Chen, <cite>Engineering Lead, Arcadia</cite></footer>
+          </blockquote>
+          
+          <blockquote class="about-testimonial">
+            <p class="about-testimonial-quote">&ldquo;She doesn't just design screens. She designs how teams think about problems. That's a rare skill.&rdquo;</p>
+            <footer class="about-testimonial-attribution">&mdash; Jordan Taylor, <cite>VP of Product, Orbital</cite></footer>
+          </blockquote>
+          
+          <blockquote class="about-testimonial">
+            <p class="about-testimonial-quote">&ldquo;Working with her raised the bar for everyone on the team. She made us all better designers.&rdquo;</p>
+            <footer class="about-testimonial-attribution">&mdash; Samira Patel, <cite>Product Designer, Cirrus</cite></footer>
+          </blockquote>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </div>
+
+
+  <script src="/howdy-jekyll-theme/assets/js/theme-toggle.js"></script>
+  <script src="/howdy-jekyll-theme/assets/js/mobile-nav.js"></script>
+
+  <!-- Analytics -->
+  
+
+
+  <!-- Custom JS injection -->
+  
+
+  <script>
+  // Smooth page transitions: fade out content only, then navigate
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || link.target === '_blank') return;
+
+    const url = new URL(href, window.location.href);
+    if (url.origin === window.location.origin && url.pathname !== window.location.pathname) {
+      e.preventDefault();
+
+      if (typeof window.howdyNavIsClosing === 'function' && window.howdyNavIsClosing()) {
+        setTimeout(() => {
+          document.body.classList.add('howdy-navigating');
+          setTimeout(() => { window.location.href = href; }, 150);
+        }, 300);
+      } else {
+        document.body.classList.add('howdy-navigating');
+        setTimeout(() => { window.location.href = href; }, 150);
+      }
+    }
+  });
+  </script>
+
+  <script>
+  // Fix pagination links - add blog path prefix if missing
+  const blogPath = '/howdy-jekyll-theme/blog/';
+  document.querySelectorAll('.pagination a[href^="/page"]').forEach(link => {
+    if (!link.href.includes(blogPath)) {
+      link.href = blogPath + link.getAttribute('href').substring(1);
+    }
+  });
+  </script>
+
+  <script>
+  // TOC smooth scroll with offset and highlight
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.toc a');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    target.style.transition = 'color 0.3s ease';
+    target.style.color = 'var(--howdy-accent)';
+    setTimeout(() => {
+      target.style.color = '';
+    }, 1500);
+
+    window.history.pushState(null, null, href);
+  });
+  </script>
+</body>
+</html>
