@@ -54,9 +54,7 @@ description: "A clean and modern Jekyll theme for personal websites and portfoli
 author: "Your Name"
 email: "hi@yoursite.com"
 
-# tagline — Used as the homepage <title> and meta description.
-# Typically your name + title, e.g. "Morgan Chen | Principal Product Designer".
-tagline: "Your Name | Product Designer"
+lang: "en"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # [2] URL & base path
@@ -169,7 +167,13 @@ pagination:
   prev_text: "Prev"
   next_text: "Next"
 
-# autopages — Silences jekyll-paginate-v2 warning about collection/tag pages.
+# autopages — Disables automatic paginated tag/category pages.
+# Set to a config hash (see jekyll-paginate-v2 docs) to enable.
+# Example:
+#   autopages:
+#     tags:
+#       enabled: true
+#       title: "Posts tagged :tag"
 autopages: false
 
 # blog — Blog index page settings.
@@ -480,7 +484,9 @@ contact:
     email_placeholder: "your@email.com"
     message_placeholder: "What's on your mind?"
     button_text: "Send message"
-    action: "" # Form endpoint URL (e.g. Formspree). Leave empty for mailto:
+    # action — POST endpoint for the form. Leave empty "" to fall back to a
+    # mailto: link using the site.email address.
+    action: ""
   faq:
     enabled: true
     items:
