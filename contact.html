@@ -382,6 +382,14 @@
       }
     }
   });
+
+  // bfcache restoration — clear transition state when navigating back
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+      document.body.classList.remove('howdy-navigating');
+      document.body.classList.add('loaded');
+    }
+  });
   </script>
 
   <script>
