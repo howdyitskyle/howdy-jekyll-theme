@@ -9,18 +9,6 @@
   const moonIcon = toggleButton.querySelector('.moon-icon');
   const root = document.documentElement;
 
-  // Update icon visibility
-  function updateIcon(theme) {
-    if (!sunIcon || !moonIcon) return;
-    if (theme === 'dark') {
-      sunIcon.style.display = 'block';
-      moonIcon.style.display = 'none';
-    } else {
-      sunIcon.style.display = 'none';
-      moonIcon.style.display = 'block';
-    }
-  }
-
   // Set theme
   function setTheme(theme) {
     if (theme === 'dark') {
@@ -31,12 +19,7 @@
       root.classList.remove('dark-mode');
     }
     localStorage.setItem('howdy-theme', theme);
-    updateIcon(theme);
   }
-
-  // Initialize - check current theme from class
-  const currentTheme = root.classList.contains('dark-mode') ? 'dark' : 'light';
-  updateIcon(currentTheme);
 
   // Toggle on click
   toggleButton.addEventListener('click', function() {
