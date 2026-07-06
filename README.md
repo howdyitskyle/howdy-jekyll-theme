@@ -125,6 +125,7 @@ Remove any `theme:` and `remote_theme:` lines from `_config.yml`, delete `_layou
 # _config.yml
 title: "Your Name"
 description: "Your site description"
+lang: "en"
 author: "Your Name"
 email: "hi@yoursite.com"
 
