@@ -87,7 +87,6 @@
     const root = document.documentElement;
     const saved = localStorage.getItem('howdy-theme');
     {% if site.default_theme and site.default_theme != "auto" %}
-    const defaultMode = '{{ site.default_theme }}';
     if (saved === 'dark') {
       root.classList.add('dark-mode');
       root.classList.remove('light-mode');

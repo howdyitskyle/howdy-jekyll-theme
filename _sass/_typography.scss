@@ -122,7 +122,7 @@ ul ul {
 }
 
 // Heading 2 — fluid responsive sizing
-h2, .h2 {
+h2 {
   font-family: var(--howdy-font-primary);
   font-weight: 600;
   // Fluid: 24px at 360px → 40px at 1440px+
@@ -140,7 +140,7 @@ h2, .h2 {
 }
 
 // Heading 3 — fluid responsive sizing
-h3, .h3 {
+h3 {
   font-family: var(--howdy-font-primary);
   font-weight: 600;
   // Fluid: 18px at 480px → 24px at 1440px+

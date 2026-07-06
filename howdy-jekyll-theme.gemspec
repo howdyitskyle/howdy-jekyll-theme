@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "howdy-jekyll-theme"
-  spec.version       = "1.0.6"
+  spec.version       = "1.0.8"
   spec.authors       = ["Kyle Greenan"]
   spec.email         = ["kyle@howdyitskyle.com"]
 
@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 2.4"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "html-proofer", "~> 5.0"
+  spec.add_development_dependency "webrick", "~> 1.8"
 end

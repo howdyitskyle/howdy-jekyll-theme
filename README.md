@@ -2,7 +2,7 @@
 
 > A clean, modern, and minimalist Jekyll theme for personal websites and portfolios.
 
-[![Gem Version](https://badge.fury.io/rb/howdy-jekyll-theme.svg)](https://rubygems.org/gems/howdy-jekyll-theme)
+[![Gem Version](https://img.shields.io/gem/v/howdy-jekyll-theme)](https://rubygems.org/gems/howdy-jekyll-theme)
 [![Gem Downloads](https://img.shields.io/gem/dt/howdy-jekyll-theme)](https://rubygems.org/gems/howdy-jekyll-theme)
 [![CI](https://github.com/howdyitskyle/howdy-jekyll-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/howdyitskyle/howdy-jekyll-theme/actions/workflows/ci.yml)
 [![Jekyll](https://img.shields.io/badge/jekyll-%E2%89%A53.9-008a1e)](https://jekyllrb.com/)
