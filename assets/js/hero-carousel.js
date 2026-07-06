@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   carousels.forEach(carousel => {
     if (typeof Swiper === 'undefined') return;
 
-    const slideCount = carousel.querySelectorAll('.swiper-slide').length;
-    if (slideCount < 2) return;
-
     new Swiper(carousel, {
       effect: 'fade',
       fadeEffect: { crossFade: true },

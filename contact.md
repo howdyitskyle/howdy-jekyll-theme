@@ -5,7 +5,7 @@ subtitle: "Let's chat"
 hero_image: /assets/illustrations/email.svg
 ---
 
-<section class="contact-section">
+<section>
   {% if site.contact.intro %}
   <p class="contact-intro">{{ site.contact.intro }}</p>
   {% endif %}

@@ -49,8 +49,7 @@
 // Page exit transition — content only, keeps hero/nav persistent
 body.howdy-navigating {
   .content-area,
-  .company-logos,
-  .stats {
+  .company-logos {
     opacity: 0;
     transition: opacity 0.15s var(--howdy-ease-in);
     will-change: opacity;
@@ -80,13 +79,6 @@ body.howdy-navigating {
 
 body.loaded .hero-content {
   opacity: 1;
-}
-
-// Carousel container starts invisible, fades in smoothly
-.hero-carousel {
-  opacity: 0;
-  transform: scale(1.02);
-  transition: opacity 0.5s var(--howdy-ease-out), transform 0.5s var(--howdy-ease-out);
 }
 
 body.loaded .hero-carousel {
@@ -362,9 +354,6 @@ body.loaded .projects-grid {
   position: relative;
   overflow-y: auto;
   transition: var(--howdy-transition);
-  scrollbar-width: thin;
-  scrollbar-color: var(--howdy-border) transparent;
-
   @media (max-width: $howdy-lg) {
     flex: none;
     width: 100%;
@@ -863,6 +852,9 @@ html.nav-open .nav-overlay {
   position: relative;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.5s var(--howdy-ease-out), transform 0.5s var(--howdy-ease-out);
 
   .swiper-wrapper {
     height: 100%;

@@ -60,3 +60,4 @@ lib/          — Gem entry point (Jekyll hook)
 - The `.bundle/` directory contains vendored gems — do not edit files inside it.
 - When deploying to a GitHub Pages project site, build with `--baseurl "/repository-name"` so asset paths resolve correctly.
 - The Playwright Docker container is based on Ubuntu 22.04 — Ruby native gems that need C compilation require `build-essential` and `ruby-dev`.
+- `main` is a **protected branch** — requires 4 status checks to pass. Commits cannot be pushed directly to main; use branches + PRs into main. Tags can be pushed independently without PRs (`git push origin <tagname>`).

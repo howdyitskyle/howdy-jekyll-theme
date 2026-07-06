@@ -39,17 +39,17 @@ layout: default
           {{ content }}
         </div>
 
-          <div class="detail-nav detail-nav-project">
+          <div class="detail-nav">
             <a href="{{ '/projects' | relative_url }}" class="btn btn-secondary">
-              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M9 3L4 8L9 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               Back to Projects
             </a>
             {% if page.next %}
-            <a href="{{ page.next.url | relative_url }}" class="btn btn-secondary project-nav-next">
+            <a href="{{ page.next.url | relative_url }}" class="btn btn-secondary">
               <span class="btn-label">{{ page.next.title }}</span>
-              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="btn-arrow">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M7 3L12 8L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
