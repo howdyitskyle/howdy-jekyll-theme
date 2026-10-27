@@ -55,8 +55,36 @@ task :lighthouse => :build do
   system("npx lhci autorun --config=./lighthouserc.json") || abort("\n  Lighthouse CI failed.")
 end
 
-desc "Run all tests: HTML validation + config + Lighthouse"
-task :all => [:validate_config, :test, :lighthouse]
+desc "Run all tests: HTML validation + config + Playwright image + Lighthouse"
+task :all => [:validate_config, :check_playwright, :test, :lighthouse]
+
+desc "Verify the CI Playwright container image matches the @playwright/test version"
+task :check_playwright do
+  require "json"
+
+  package = JSON.parse(File.read(File.join(JEKYLL_DIR, "package.json")))
+  declared = package.dig("devDependencies", "@playwright/test").to_s.sub(/\A[\^~>=<\s]+/, "")
+  workflow_path = File.join(JEKYLL_DIR, ".github", "workflows", "ci.yml")
+  image = File.read(workflow_path)[%r{mcr\.microsoft\.com/playwright:v(\d+(?:\.\d+)*)}, 1]
+
+  abort "\n  package.json is missing a devDependency on @playwright/test." if declared.empty?
+  abort "\n  No mcr.microsoft.com/playwright:vX.Y.Z image found in #{workflow_path}." unless image
+
+  if declared != image
+    abort <<~MSG
+
+      Playwright image mismatch:
+        package.json                     @playwright/test  #{declared}
+        .github/workflows/ci.yml         container image   v#{image}
+
+      Playwright's browsers must match the package version exactly. Update the
+      container image to mcr.microsoft.com/playwright:v#{declared} in
+      .github/workflows/ci.yml, then re-run.
+    MSG
+  end
+
+  puts "\n  Playwright container image v#{image} matches @playwright/test #{declared}."
+end
 
 desc "Validate _config.yml for required fields and valid values"
 task :validate_config do
