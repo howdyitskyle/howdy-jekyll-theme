@@ -12,8 +12,9 @@ Gem-based Jekyll portfolio/blog theme. The repo is both the gem source and its o
 | Build only | `bundle exec rake build` |
 | HTML checks | `bundle exec rake test` (builds + runs html-proofer on `_site/`) |
 | Config checks | `bundle exec rake validate_config` (required fields, nav shape, `fonts.primary` allowlist) |
+| Playwright image | `bundle exec rake check_playwright` (fails if the CI container tag ≠ `@playwright/test`) |
 | Perf/a11y | `bundle exec rake lighthouse` (needs `npm ci` first; asserts ≥0.9 on 4 categories across 5 URLs in `lighthouserc.json`) |
-| All Ruby checks | `bundle exec rake all` (= validate_config + test + lighthouse) |
+| All Ruby checks | `bundle exec rake all` (= validate_config + check_playwright + test + lighthouse) |
 | E2E | `npm test` (Playwright; `webServer` in `playwright.config.js` auto-starts Jekyll on :4000, reuses existing server locally) |
 | Build gem | `gem build howdy-jekyll-theme.gemspec` |
 
@@ -36,5 +37,5 @@ Gem-based Jekyll portfolio/blog theme. The repo is both the gem source and its o
 ## CI/CD (`.github/workflows/ci.yml`)
 
 - Jobs: `validate` → `test` → `lighthouse` + `playwright` (parallel) → `deploy` (only on `main` push). CI pins **Ruby 3.3**; local runs 3.4.x.
-- Playwright runs in `mcr.microsoft.com/playwright:v1.64.1` container — the image tag must match `@playwright/test` in `package.json`, or every test fails with "update docker image as well". Ruby needs `apt-get install -y -qq libyaml-0-2 build-essential ruby-dev` first (already in the workflow).
+- Playwright runs in `mcr.microsoft.com/playwright:v1.64.1` container — the image tag must match `@playwright/test` in `package.json` exactly, or every test fails with "update docker image as well". `rake check_playwright` enforces this in CI and locally. Ruby needs `apt-get install -y -qq libyaml-0-2 build-essential ruby-dev` first (already in the workflow).
 - Deploy builds with `JEKYLL_ENV=production bundle exec jekyll build --baseurl "/howdy-jekyll-theme"` and pushes `_site/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`. Reproduce baseurl issues with that exact build command.

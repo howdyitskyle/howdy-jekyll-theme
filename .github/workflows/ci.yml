@@ -79,6 +79,9 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: Verify Playwright image matches @playwright/test
+        run: bundle exec rake check_playwright
+
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
