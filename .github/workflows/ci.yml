@@ -58,8 +58,32 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install npm deps
+        run: npm ci
+
       - name: Run Lighthouse
         run: bundle exec rake lighthouse
+
+      - name: Dump contrast failures
+        if: failure()
+        run: |
+          node -e '
+            const fs = require("fs");
+            if (!fs.existsSync("lighthouse-reports")) process.exit(0);
+            for (const f of fs.readdirSync("lighthouse-reports").filter(f => f.endsWith(".report.json"))) {
+              const d = JSON.parse(fs.readFileSync("lighthouse-reports/" + f));
+              const items = ((d.audits["color-contrast"] || {}).details || {}).items || [];
+              if (!items.length) continue;
+              console.log(f, "items=" + items.length, "lighthouse=" + d.lighthouseVersion);
+              for (const i of items.slice(0, 6)) console.log("   ", (i.node || {}).selector, "|", (i.node || {}).explanation);
+            }
+          '
 
   playwright:
     needs: test
