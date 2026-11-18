@@ -7,7 +7,7 @@ Gem-based Jekyll portfolio/blog theme. The repo is both the gem source and its o
 | Action | Command |
 |---|---|
 | Setup Ruby | `bundle config --local path .bundle && bundle install` |
-| Setup JS | `npm ci` |
+| Setup JS | `npm ci` + `npx playwright install chromium` (local E2E only; CI's container image ships browsers) |
 | Dev server | `bundle exec jekyll serve` → http://localhost:4000 |
 | Build only | `bundle exec rake build` |
 | HTML checks | `bundle exec rake test` (builds + runs html-proofer on `_site/`) |
@@ -15,7 +15,7 @@ Gem-based Jekyll portfolio/blog theme. The repo is both the gem source and its o
 | Playwright image | `bundle exec rake check_playwright` (fails if the CI container tag ≠ `@playwright/test`) |
 | Perf/a11y | `bundle exec rake lighthouse` (needs `npm ci` first; asserts ≥0.9 on 4 categories across 5 URLs in `lighthouserc.json`) |
 | All Ruby checks | `bundle exec rake all` (= validate_config + check_playwright + test + lighthouse) |
-| E2E | `npm test` (Playwright; `webServer` in `playwright.config.js` auto-starts Jekyll on :4000, reuses existing server locally) |
+| E2E | `npm test` (Playwright; `webServer` in `playwright.config.js` auto-starts Jekyll on :4000, reuses existing server locally). After a version bump, existing local browsers are stale — re-run `npx playwright install chromium`. |
 | Build gem | `gem build howdy-jekyll-theme.gemspec` |
 
 ## Architecture
