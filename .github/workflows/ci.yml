@@ -58,6 +58,15 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install npm deps
+        run: npm ci
+
       - name: Run Lighthouse
         run: bundle exec rake lighthouse
 
