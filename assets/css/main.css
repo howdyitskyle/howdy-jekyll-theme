@@ -2,19 +2,19 @@
 :root {
   --howdy-text-primary: #1e1e28;
   --howdy-bg-light-gray: #f0f0f0;
-  --howdy-accent: #008a1e;
+  --howdy-accent: #00761a;
   --howdy-bg-green-tint: #f5fbf7;
   --howdy-bg-white: #fff;
   --howdy-border: #e3e3e3;
-  --howdy-text-red: #c74242;
+  --howdy-text-red: #b93b3b;
   --howdy-text-secondary: #47474f;
-  --howdy-text-muted: #797d85;
+  --howdy-text-muted: #686c74;
   --howdy-bg-red-tint: #fff5f5;
   --howdy-bg-semi-white: #ffffffb3;
   --howdy-bg-cream: #f8f2eb;
-  --howdy-accent-orange: #ca7f2d;
+  --howdy-accent-orange: #a0631b;
   --howdy-bg-orange-tint: #fdf6ee;
-  --howdy-accent-blue: #2a7ca8;
+  --howdy-accent-blue: #25709a;
   --howdy-bg-blue-tint: #f2f8fb;
   --howdy-accent-purple: #914dad;
   --howdy-bg-purple-tint: #f8f4fa;
